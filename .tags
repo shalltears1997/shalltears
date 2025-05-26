@@ -1,0 +1,873 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+str	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/10_parameter.hpp	/^char str[256];$/;"	variable	line:3
+hark_struct	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^struct hark_struct$/;"	struct	line:4
+count	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	int count;$/;"	member	line:6	struct:hark_struct
+size	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	int size[5];	\/\/int num;$/;"	member	line:7	struct:hark_struct
+power	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	double power[5];$/;"	member	line:8	struct:hark_struct
+angle	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	double angle[5];$/;"	member	line:9	struct:hark_struct
+power_ave	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	double power_ave[5];$/;"	member	line:10	struct:hark_struct
+angle_ave	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	double angle_ave[5];$/;"	member	line:11	struct:hark_struct
+sd	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	double sd[5];$/;"	member	line:12	struct:hark_struct
+flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	bool flag;$/;"	member	line:13	struct:hark_struct
+angle_gap	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/22_hark.hpp	/^	double angle_gap;$/;"	member	line:14	struct:hark_struct
+GIVEUP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define GIVEUP /;"	macro	line:5
+LOST	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define LOST /;"	macro	line:6
+O_CATCH	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define O_CATCH /;"	macro	line:7
+S_CATCH	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define S_CATCH /;"	macro	line:8
+P_CATCH	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define P_CATCH /;"	macro	line:9
+CATCHING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define CATCHING /;"	macro	line:10
+HOLD	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define HOLD /;"	macro	line:11
+NONE	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define NONE /;"	macro	line:13
+OWNER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define OWNER /;"	macro	line:14
+STRANGER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define STRANGER /;"	macro	line:15
+PERSON3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^#define PERSON3 /;"	macro	line:16
+Ball	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^class Ball$/;"	class	line:18
+setflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	bool setflag;$/;"	member	line:21	class:Ball
+previous	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	Position previous;$/;"	member	line:22	class:Ball
+current	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	Position current;$/;"	member	line:23	class:Ball
+losted	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	Position losted;$/;"	member	line:24	class:Ball
+state	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	int state;$/;"	member	line:25	class:Ball
+target	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	short target;$/;"	member	line:26	class:Ball
+power	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	int power;$/;"	member	line:27	class:Ball
+first_enter	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	bool first_enter;$/;"	member	line:28	class:Ball
+getPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	Position getPose(){return current;};$/;"	function	line:32	class:Ball	signature:()
+getPrePose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	Position getPrePose(){return previous;};$/;"	function	line:33	class:Ball	signature:()
+getLostedPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	Position getLostedPose(){return losted;};$/;"	function	line:34	class:Ball	signature:()
+getState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	int getState(){return state;};$/;"	function	line:35	class:Ball	signature:()
+getTarget	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	int getTarget(){return target;};$/;"	function	line:36	class:Ball	signature:()
+playingPersonIs	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	short playingPersonIs(){return target;};$/;"	function	line:37	class:Ball	signature:()
+getX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	double getX(){return current.posex;};$/;"	function	line:42	class:Ball	signature:()
+getY	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	double getY(){return current.posey;};$/;"	function	line:43	class:Ball	signature:()
+getP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	int getP(){return power;};$/;"	function	line:44	class:Ball	signature:()
+isFirst	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	bool isFirst(){return first_enter;};$/;"	function	line:48	class:Ball	signature:()
+isKnown	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	void isKnown(){first_enter = false;};$/;"	function	line:49	class:Ball	signature:()
+~Ball	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_ball.hpp	/^	~Ball(){};$/;"	function	line:51	class:Ball	signature:()
+state	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	short state;$/;"	member	line:8	struct:__anon1
+value	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	float value;$/;"	member	line:9	struct:__anon1
+InnerState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^}InnerState;$/;"	typedef	line:10	typeref:struct:__anon1
+Dog	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^class Dog$/;"	class	line:12
+current	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	Position current;$/;"	member	line:15	class:Dog
+previous	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	Position previous;$/;"	member	line:16	class:Dog
+miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState miss;				$/;"	member	line:20	class:Dog
+o_anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState o_anxiety;$/;"	member	line:21	class:Dog
+o_explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState o_explore;$/;"	member	line:22	class:Dog
+s_miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState s_miss;				$/;"	member	line:24	class:Dog
+anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState anxiety;$/;"	member	line:25	class:Dog
+s_explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState s_explore;$/;"	member	line:26	class:Dog
+s2_miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState s2_miss;				$/;"	member	line:28	class:Dog
+s2_anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState s2_anxiety;$/;"	member	line:29	class:Dog
+s2_explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState s2_explore;$/;"	member	line:30	class:Dog
+b_miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState b_miss;				$/;"	member	line:32	class:Dog
+b_anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState b_anxiety;$/;"	member	line:33	class:Dog
+b_explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState b_explore;$/;"	member	line:34	class:Dog
+oy_miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState oy_miss;				$/;"	member	line:36	class:Dog
+oy_anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState oy_anxiety;$/;"	member	line:37	class:Dog
+oy_explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState oy_explore;$/;"	member	line:38	class:Dog
+explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState explore;$/;"	member	line:40	class:Dog
+movvec	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	Vec movvec;$/;"	member	line:41	class:Dog
+tilt_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double tilt_deg;\/\/峻治追加$/;"	member	line:44	class:Dog
+pan_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double pan_deg;\/\/峻治追加$/;"	member	line:45	class:Dog
+headtime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double headtime;$/;"	member	line:46	class:Dog
+known_level	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	float known_level[area1][area2];$/;"	member	line:49	class:Dog
+motionID	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	int motionID;$/;"	member	line:51	class:Dog
+willingness	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	bool willingness;$/;"	member	line:52	class:Dog
+sensitivity	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double sensitivity;$/;"	member	line:53	class:Dog
+movingflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	bool movingflag;$/;"	member	line:54	class:Dog
+trans_body_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double trans_body_deg;$/;"	member	line:66	class:Dog
+final_body_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double final_body_deg;$/;"	member	line:72	class:Dog
+draw_body_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double draw_body_deg;$/;"	member	line:78	class:Dog
+final_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double final_deg;$/;"	member	line:89	class:Dog
+goal	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	Position goal;$/;"	member	line:90	class:Dog
+getFinalDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getFinalDeg(){return final_deg;};$/;"	function	line:91	class:Dog	signature:()
+robot_angle	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double robot_angle;$/;"	member	line:92	class:Dog
+getPan_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getPan_deg(){return pan_deg;};\/\/峻治$/;"	function	line:101	class:Dog	signature:()
+getTilt_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getTilt_deg(){return tilt_deg;};\/\/峻治$/;"	function	line:102	class:Dog	signature:()
+getHeadTime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getHeadTime(){return headtime;};\/\/峻治$/;"	function	line:104	class:Dog	signature:()
+setMotion	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setMotion(int m_ID){motionID = m_ID;};$/;"	function	line:109	class:Dog	signature:(int m_ID)
+getMotionID	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	int getMotionID(){return motionID;};$/;"	function	line:110	class:Dog	signature:()
+getCurrnetPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	Position getCurrnetPosition(){return current;};$/;"	function	line:111	class:Dog	signature:()
+getPreviousPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	Position getPreviousPosition(){return previous;};$/;"	function	line:112	class:Dog	signature:()
+getX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getX(){return current.posex;};$/;"	function	line:113	class:Dog	signature:()
+getY	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getY(){return current.posey;};$/;"	function	line:114	class:Dog	signature:()
+getvecX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getvecX(){return movvec.vx;};$/;"	function	line:115	class:Dog	signature:()
+getvecY	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getvecY(){return movvec.vy;};$/;"	function	line:116	class:Dog	signature:()
+getDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getDeg(){return robot_angle;};	\/\/ tk1701$/;"	function	line:118	class:Dog	signature:()
+setMiss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setMiss(double Value,short State){miss.value= Value; miss.state = State;};$/;"	function	line:120	class:Dog	signature:(double Value,short State)
+setO_Anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setO_Anxiety(double Value,short State){o_anxiety.value = Value; o_anxiety.state = State;};$/;"	function	line:121	class:Dog	signature:(double Value,short State)
+setO_Explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setO_Explore(double Value,short State){o_explore.value = Value; o_explore.state = State;};$/;"	function	line:122	class:Dog	signature:(double Value,short State)
+setS1_Miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setS1_Miss(double Value,short State){s_miss.value= Value; s_miss.state = State;};$/;"	function	line:124	class:Dog	signature:(double Value,short State)
+setAnxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setAnxiety(double Value,short State){anxiety.value = Value; anxiety.state = State;};$/;"	function	line:125	class:Dog	signature:(double Value,short State)
+setS1_Explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setS1_Explore(double Value,short State){s_explore.value = Value; s_explore.state = State;};	$/;"	function	line:126	class:Dog	signature:(double Value,short State)
+setS2_Miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setS2_Miss(double Value,short State){s2_miss.value= Value; s2_miss.state = State;};$/;"	function	line:128	class:Dog	signature:(double Value,short State)
+setS2_Anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setS2_Anxiety(double Value,short State){s2_anxiety.value = Value; s2_anxiety.state = State;};$/;"	function	line:129	class:Dog	signature:(double Value,short State)
+setS2_Explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setS2_Explore(double Value,short State){s2_explore.value = Value; s2_explore.state = State;};	$/;"	function	line:130	class:Dog	signature:(double Value,short State)
+setB_Miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setB_Miss(double Value,short State){b_miss.value= Value; b_miss.state = State;};$/;"	function	line:132	class:Dog	signature:(double Value,short State)
+setB_Anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setB_Anxiety(double Value,short State){b_anxiety.value = Value; b_anxiety.state = State;};$/;"	function	line:133	class:Dog	signature:(double Value,short State)
+setB_Explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setB_Explore(double Value,short State){b_explore.value = Value; b_explore.state = State;};	$/;"	function	line:134	class:Dog	signature:(double Value,short State)
+setOY_Miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setOY_Miss(double Value,short State){oy_miss.value= Value; oy_miss.state = State;};$/;"	function	line:136	class:Dog	signature:(double Value,short State)
+setOY_Anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setOY_Anxiety(double Value,short State){oy_anxiety.value = Value; oy_anxiety.state = State;};$/;"	function	line:137	class:Dog	signature:(double Value,short State)
+setOY_Explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setOY_Explore(double Value,short State){oy_explore.value = Value; oy_explore.state = State;};$/;"	function	line:138	class:Dog	signature:(double Value,short State)
+setExplore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setExplore(double Value,short State){explore.value = Value; explore.state = State;};$/;"	function	line:140	class:Dog	signature:(double Value,short State)
+setSens	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void setSens(double Value){sensitivity = Value;};$/;"	function	line:142	class:Dog	signature:(double Value)
+getSens	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	double getSens(){return sensitivity;};$/;"	function	line:143	class:Dog	signature:()
+getWillingness	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	bool getWillingness(){return willingness;};$/;"	function	line:145	class:Dog	signature:()
+getMiss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState getMiss(){return miss;};$/;"	function	line:146	class:Dog	signature:()
+getAnxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState getAnxiety(){return anxiety;};$/;"	function	line:147	class:Dog	signature:()
+getExplore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	InnerState getExplore(){return explore;};$/;"	function	line:148	class:Dog	signature:()
+moving	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	void moving(bool true_or_false){movingflag = true_or_false;};$/;"	function	line:151	class:Dog	signature:(bool true_or_false)
+isMoving	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	bool isMoving(){return movingflag;};$/;"	function	line:152	class:Dog	signature:()
+getKnownLevel	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_dog.hpp	/^	float getKnownLevel(int inum , int jnum){return known_level[inum][jnum];};$/;"	function	line:156	class:Dog	signature:(int inum , int jnum)
+Human	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^class Human : public PotentialField$/;"	class	line:5
+attachment	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double attachment;$/;"	member	line:8	class:Human
+humanID	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	int humanID;$/;"	member	line:9	class:Human
+name	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	char name[16];$/;"	member	line:10	class:Human
+timer	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	clock_t timer;$/;"	member	line:11	class:Human
+current	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	Position current;$/;"	member	line:12	class:Human
+previous	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	Position previous;$/;"	member	line:13	class:Human
+color_ID	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	Color color_ID;$/;"	member	line:14	class:Human
+movvec	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	Vec movvec;$/;"	member	line:15	class:Human
+will	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	short will;$/;"	member	line:16	class:Human
+data	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double data[4];$/;"	member	line:17	class:Human
+first_enter	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	bool first_enter;$/;"	member	line:18	class:Human
+miss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	InnerState miss;$/;"	member	line:19	class:Human
+anxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	InnerState anxiety;$/;"	member	line:20	class:Human
+owner_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	int owner_flag;$/;"	member	line:21	class:Human
+disR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double disR;$/;"	member	line:22	class:Human
+lastdis	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double lastdis;$/;"	member	line:23	class:Human
+thetav	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double thetav;$/;"	member	line:24	class:Human
+thetaor	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double thetaor;$/;"	member	line:25	class:Human
+thetaro	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double thetaro;$/;"	member	line:26	class:Human
+stressS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double stressS;$/;"	member	line:27	class:Human
+exsist	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	bool exsist;$/;"	member	line:28	class:Human
+flag_e	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	int flag_e;$/;"	member	line:29	class:Human
+isFirst	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	bool isFirst(){return first_enter;};$/;"	function	line:34	class:Human	signature:()
+isKnown	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	void isKnown(){first_enter = false;};$/;"	function	line:35	class:Human	signature:()
+setDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	void setDeg(double degree){previous.deg = current.deg ; current.deg = degree;};$/;"	function	line:38	class:Human	signature:(double degree)
+getCurrentPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	Position getCurrentPosition(){return current;};$/;"	function	line:39	class:Human	signature:()
+setAttachment	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	void setAttachment(double value){if(0 <= value && value <= 100)attachment = value;};$/;"	function	line:48	class:Human	signature:(double value)
+getX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getX(){return current.posex;};$/;"	function	line:51	class:Human	signature:()
+getY	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getY(){return current.posey;};$/;"	function	line:52	class:Human	signature:()
+getZ	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getZ(){return current.posez;};$/;"	function	line:53	class:Human	signature:()
+getDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getDeg(){return current.deg;};$/;"	function	line:54	class:Human	signature:()
+getvecX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getvecX(){return movvec.vx;};$/;"	function	line:55	class:Human	signature:()
+getvecY	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getvecY(){return movvec.vy;};$/;"	function	line:56	class:Human	signature:()
+getAttachment	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getAttachment(){return attachment;};$/;"	function	line:58	class:Human	signature:()
+setMiss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	void setMiss(double Value,short State){miss.value= Value; miss.state = State;};$/;"	function	line:59	class:Human	signature:(double Value,short State)
+setAnxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	void setAnxiety(double Value,short State){anxiety.value = Value; anxiety.state = State;};$/;"	function	line:60	class:Human	signature:(double Value,short State)
+getMiss	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	InnerState getMiss(){return miss;};$/;"	function	line:61	class:Human	signature:()
+getAnxiety	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	InnerState getAnxiety(){return anxiety;};$/;"	function	line:62	class:Human	signature:()
+getOwnerFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	int getOwnerFlag(){return owner_flag;};$/;"	function	line:66	class:Human	signature:()
+getDistanceRobot	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getDistanceRobot(){return disR;};$/;"	function	line:69	class:Human	signature:()
+getStressState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_human.hpp	/^	double getStressState(){return stressS;};$/;"	function	line:71	class:Human	signature:()
+GIVEUP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define GIVEUP /;"	macro	line:3
+LOST	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define LOST /;"	macro	line:4
+O_CATCH	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define O_CATCH /;"	macro	line:5
+S_CATCH	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define S_CATCH /;"	macro	line:6
+P_CATCH	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define P_CATCH /;"	macro	line:7
+CATCHING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define CATCHING /;"	macro	line:8
+HOLD	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define HOLD /;"	macro	line:9
+NONE	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define NONE /;"	macro	line:11
+OWNER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define OWNER /;"	macro	line:12
+STRANGER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define STRANGER /;"	macro	line:13
+PERSON3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^#define PERSON3 /;"	macro	line:14
+Obs	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^class Obs : public PotentialField$/;"	class	line:16
+setflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	bool setflag;$/;"	member	line:19	class:Obs
+previous	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	Position previous;$/;"	member	line:20	class:Obs
+current	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	Position current;$/;"	member	line:21	class:Obs
+losted	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	Position losted;$/;"	member	line:22	class:Obs
+state	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	int state;$/;"	member	line:23	class:Obs
+first_enter	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	bool first_enter;$/;"	member	line:24	class:Obs
+getPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	Position getPose(){return current;};$/;"	function	line:28	class:Obs	signature:()
+getPrePose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	Position getPrePose(){return previous;};$/;"	function	line:29	class:Obs	signature:()
+getLostedPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	Position getLostedPose(){return losted;};$/;"	function	line:30	class:Obs	signature:()
+getState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	int getState(){return state;};$/;"	function	line:31	class:Obs	signature:()
+getX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	double getX(){return current.posex;};$/;"	function	line:36	class:Obs	signature:()
+getY	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	double getY(){return current.posey;};$/;"	function	line:37	class:Obs	signature:()
+getCurrentPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	Position getCurrentPosition(){return current;};$/;"	function	line:39	class:Obs	signature:()
+~Obs	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_obstacle.hpp	/^	~Obs(){};$/;"	function	line:41	class:Obs	signature:()
+gridnum1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_potential_field.hpp	/^#define gridnum1 /;"	macro	line:3
+gridnum2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_potential_field.hpp	/^#define gridnum2 /;"	macro	line:4
+PotentialField	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_potential_field.hpp	/^class PotentialField$/;"	class	line:6
+potential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_potential_field.hpp	/^	double potential[gridnum1][gridnum2];$/;"	member	line:9	class:PotentialField
+setPotential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_potential_field.hpp	/^	void setPotential(int inum , int jnum, double value ){potential[inum][jnum] = value;};$/;"	function	line:12	class:PotentialField	signature:(int inum , int jnum, double value )
+getPotential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_potential_field.hpp	/^	double getPotential(int inum , int jnum){return potential[inum][jnum];};$/;"	function	line:16	class:PotentialField	signature:(int inum , int jnum)
+Room	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_room.hpp	/^class Room$/;"	class	line:5
+start	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_room.hpp	/^	clock_t start;$/;"	member	line:9	class:Room
+end	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_room.hpp	/^	clock_t end;$/;"	member	line:10	class:Room
+Width	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_room.hpp	/^	double Width;$/;"	member	line:11	class:Room
+Hight	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_room.hpp	/^	double Hight;$/;"	member	line:12	class:Room
+getTime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_room.hpp	/^	clock_t getTime(){return start;};$/;"	function	line:27	class:Room	signature:()
+posex	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double posex;$/;"	member	line:6	struct:__anon2
+posey	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double posey;$/;"	member	line:7	struct:__anon2
+posez	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double posez;$/;"	member	line:8	struct:__anon2
+deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double deg;$/;"	member	line:9	struct:__anon2
+Position	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^}Position;$/;"	typedef	line:10	typeref:struct:__anon2
+vx	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double vx;$/;"	member	line:14	struct:__anon3
+vy	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double vy;$/;"	member	line:15	struct:__anon3
+Vec	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^}Vec;$/;"	typedef	line:16	typeref:struct:__anon3
+red	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double red;$/;"	member	line:26	struct:__anon4
+green	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double green;$/;"	member	line:27	struct:__anon4
+blue	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double blue;$/;"	member	line:28	struct:__anon4
+alpha	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^	double alpha;$/;"	member	line:29	struct:__anon4
+Color	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/c_struct_position.hpp	/^}Color;$/;"	typedef	line:30	typeref:struct:__anon4
+setHead	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/class.hpp	/^#define setHead /;"	macro	line:8
+PI	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define PI /;"	macro	line:5
+area1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define area1 /;"	macro	line:7
+area2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define area2 /;"	macro	line:8
+HEIGHT_ETHO	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define HEIGHT_ETHO /;"	macro	line:9
+WIDTH_ETHO	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define WIDTH_ETHO /;"	macro	line:10
+STATIC	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define STATIC /;"	macro	line:12
+INCREASING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define INCREASING /;"	macro	line:13
+DECREASING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define DECREASING /;"	macro	line:14
+DISTANCE	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define DISTANCE /;"	macro	line:16
+BEHAVIOR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define BEHAVIOR /;"	macro	line:17
+STATIC	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define STATIC /;"	macro	line:20
+INCREASING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define INCREASING /;"	macro	line:21
+DECREASING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define DECREASING /;"	macro	line:22
+DISTANCE	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define DISTANCE /;"	macro	line:23
+LOG_PATH	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define LOG_PATH /;"	macro	line:26
+DAT_PATH	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/define.hpp	/^#define DAT_PATH /;"	macro	line:27
+pioneer	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^Dog pioneer;$/;"	variable	line:3
+nlab	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^Room nlab;$/;"	variable	line:4
+obs	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^Obs obs[10000];$/;"	variable	line:8
+ptf	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^PotentialField ptf;$/;"	variable	line:9
+ball	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^Ball ball;$/;"	variable	line:10
+poR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+poO	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+poS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+poF	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+HARK_connect	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+ROBOT	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+change_attachment	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+model	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+simRefreshRatio_clock	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^extern const int poR = 2, poO = 2, poS = 2, poF = 2, HARK_connect = 2, ROBOT = 2, change_attachment = 1, model = 2, simRefreshRatio_clock = 100;$/;"	variable	line:17
+PORT_Ser	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Ser = 60000;$/;"	variable	line:32
+PORT_Cli_Pio	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Cli_Pio = 45678;$/;"	variable	line:33
+PORT_Cli_Pan	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Cli_Pan = 45364;$/;"	variable	line:34
+PORT_Cli_PF	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Cli_PF = 45365;$/;"	variable	line:35
+PORT_Cli_Face	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Cli_Face = 45600;\/\/45377;$/;"	variable	line:36
+PORT_Cli_Camera	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Cli_Camera = 45362;$/;"	variable	line:37
+PORT_Onboard	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Onboard = 45366;$/;"	variable	line:38
+PORT_Cli_tale	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Cli_tale = 45367;$/;"	variable	line:39
+PORT_Cli_oyatsu	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Cli_oyatsu = 45368;$/;"	variable	line:40
+PORT_Cli_LRF	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^unsigned short PORT_Cli_LRF = 45369;$/;"	variable	line:41
+IP_face	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^const char* IP_face = "127.0.0.1";\/\/"133.91.73.222";\/\/add$/;"	variable	line:42
+IP_ZPS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^const char* IP_ZPS = "133.91.73.183"; \/\/for ZPS$/;"	variable	line:43
+IP_onboad	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^const char* IP_onboad = "133.91.73.194"; \/\/from onboard$/;"	variable	line:44
+NUM_OF_SEND_NUM	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^const int NUM_OF_SEND_NUM = 61; \/\/オンボードPCへの送信データ長$/;"	variable	line:45
+IP_tale	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^const char* IP_tale = "127.0.0.1";\/\/arduino$/;"	variable	line:47
+IP_LRF	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^const char* IP_LRF = "133.91.73.236";\/\/LRF$/;"	variable	line:48
+debug_SO	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int debug_SO = 0;			\/\/ 0: なし、1: ボール、2: ボール遊び(1)、3: ボール遊び(2)、4: 音源定位$/;"	variable	line:52
+log_save	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool log_save = false;		\/\/ ファイル名は "C:¥¥debugEE¥¥log-entire_%04d%02d%02d_%02d%02d.txt", t.wYear, t.wMonth, t.wDay, t.wHour, t.wMinute$/;"	variable	line:53
+ball_priority	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool ball_priority = true;	\/\/ ボールが見えたら懐き度などの条件に関わらずボール遊びを選択する（塚田：true、金井さん：false）$/;"	variable	line:56
+else_behavior	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool else_behavior = false;	\/\/ Debug用｜trueのとき：音源定位、ボール遊びのあとに、必ずGoToOwner$/;"	variable	line:59
+shagamu	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^float shagamu = 600;\/\/650;$/;"	variable	line:62
+gaze_time_th	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int gaze_time_th = 6;	\/\/4$/;"	variable	line:63
+ball_time_interval_th	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^double ball_time_interval_th = 5;	\/\/7$/;"	variable	line:64
+home	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool home = false; \/\/ 2016\/06\/01 ホーム機能追加（']'キー押下でディスプレイの前まで戻ってくる）$/;"	variable	line:65
+dist_owner	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^float dist_owner, dist_stranger;$/;"	variable	line:66
+dist_stranger	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^float dist_owner, dist_stranger;$/;"	variable	line:66
+sound_angle_owner	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^float sound_angle_owner;$/;"	variable	line:67
+start_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool start_flag = true;$/;"	variable	line:92
+motionFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int motionFlag = 0;$/;"	variable	line:93
+pioneer_activate	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool pioneer_activate = false;$/;"	variable	line:95
+explore_cut	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool explore_cut = false;$/;"	variable	line:96
+headflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool headflag = false;$/;"	variable	line:97
+NextX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^double NextX, NextY;				\/\/ setMotion、potentialPath$/;"	variable	line:99
+NextY	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^double NextX, NextY;				\/\/ setMotion、potentialPath$/;"	variable	line:99
+targetpose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^Position targetpose = InitPose();$/;"	variable	line:100
+passivearea	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^Position passivearea;$/;"	variable	line:101
+SB	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^#define SB /;"	macro	line:103
+NextX_tk	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^double NextX_tk[SB], NextY_tk[SB];	\/\/ 使用なし$/;"	variable	line:104
+NextY_tk	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^double NextX_tk[SB], NextY_tk[SB];	\/\/ 使用なし$/;"	variable	line:104
+PassiveTarget	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^Position PassiveTarget = InitPose();$/;"	variable	line:106
+interactionFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool interactionFlag = false;$/;"	variable	line:111
+interactionFlag2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool interactionFlag2 = false;\/\/add$/;"	variable	line:112
+owner_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int owner_flag = -1;		\/\/ goalDecision、MonitoringThread、selectMotionFlag$/;"	variable	line:115
+owner_flags	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int owner_flags = -1;		\/\/ goalDecision、MonitoringThread、selectMotionFlag$/;"	variable	line:116
+ball_hold	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int ball_hold = 0;			\/\/ myKeyboard、myMouseFunc、myMouseMotion、PrintfThread、goalDecision、BallThread、selectMotionFlag、MonitoringThread$/;"	variable	line:118
+ball_t	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int ball_t = 0;			\/\/ myKeyboard、myMouseFunc、myMouseMotion、recvFromPioneer、PrintfThread、goalDecision、BallThread$/;"	variable	line:119
+t_id	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int t_id = 0;				\/\/ myKeyboard、myMouseFunc、recvFromPioneer、PrintfThread、goalDecision、CountThread、selectMotionFlag、MotionTread$/;"	variable	line:120
+ball_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int ball_flag = 0;			\/\/ goalDecision、BallThread、selectMotionFlag$/;"	variable	line:121
+t_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int t_flag = 0;			\/\/ PrintfThread、goalDecision$/;"	variable	line:122
+ms_d	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int ms_d = 0;			\/\/ CountThread、MonitoringThread$/;"	variable	line:123
+ms_d2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int ms_d2 = 0;			\/\/ CountThread、MonitoringThread$/;"	variable	line:124
+ms_d3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int ms_d3 = 0;			\/\/ CountThread、MonitoringThread$/;"	variable	line:125
+ms_ball	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int ms_ball = 0;			\/\/ CountThread、MonitoringThread$/;"	variable	line:126
+ms_r	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int ms_r = 0;			\/\/ 使用なし$/;"	variable	line:127
+rand_exs	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int rand_exs = 80;		\/\/ selectMotionFlag$/;"	variable	line:128
+rand_exs2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int rand_exs2 = 80;		\/\/ selectMotionFlag$/;"	variable	line:129
+expflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int expflag = 0;			\/\/ selectMotionFlag、myKeyboard$/;"	variable	line:130
+num_point	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int num_point = 10;		\/\/ 使用なし$/;"	variable	line:131
+temp_robot_deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^double temp_robot_deg = 0.0; \/\/ tk1701$/;"	variable	line:140
+stop_flag2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool stop_flag2 = false;		\/\/ 03n_TKpote3.cpp で使用：確実に止まるようにしている$/;"	variable	line:141
+sim_speed	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^double sim_speed = 6;$/;"	variable	line:143
+shagamuflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^bool shagamuflag = false;$/;"	variable	line:147
+motionFlag2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int motionFlag2 = 0;$/;"	variable	line:148
+samplingTime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_basic.hpp	/^int samplingTime = 30;$/;"	variable	line:152
+MIS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^﻿const short MIS = 0;$/;"	variable	line:1
+ANX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short ANX = 1;$/;"	variable	line:2
+EXP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short EXP = 2;$/;"	variable	line:3
+S1_MIS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short S1_MIS = 3;$/;"	variable	line:4
+O_ANX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short O_ANX = 4;$/;"	variable	line:5
+O_EXP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short O_EXP = 5;$/;"	variable	line:6
+S2_MIS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short S2_MIS = 6;$/;"	variable	line:7
+S2_ANX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short S2_ANX = 7;$/;"	variable	line:8
+S1_EXP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short S1_EXP = 8;$/;"	variable	line:9
+B_MIS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short B_MIS = 9;$/;"	variable	line:10
+B_ANX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short B_ANX = 10;$/;"	variable	line:11
+S2_EXP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short S2_EXP = 11;$/;"	variable	line:12
+OY_MIS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short OY_MIS = 12;$/;"	variable	line:13
+OY_ANX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short OY_ANX = 13;$/;"	variable	line:14
+B_EXP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short B_EXP = 14;$/;"	variable	line:15
+OY_EXP	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short OY_EXP = 15;$/;"	variable	line:16
+OBJ	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const short OBJ = 100;$/;"	variable	line:17
+NonOwner	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int NonOwner = - 1;$/;"	variable	line:19
+Owner	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int Owner = 0;$/;"	variable	line:20
+SemiOwner	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int SemiOwner = 1;$/;"	variable	line:21
+EXPLORE	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int EXPLORE = 1;$/;"	variable	line:24
+EXPLORE_TO_OWNER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int EXPLORE_TO_OWNER = 2;$/;"	variable	line:25
+EXPLORE_TO_STRANGER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int EXPLORE_TO_STRANGER = 3;$/;"	variable	line:26
+EXPLORE_TO_PLACE	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int EXPLORE_TO_PLACE = 4;$/;"	variable	line:27
+PASSIVE_BEHAVIOR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int PASSIVE_BEHAVIOR = 5;$/;"	variable	line:28
+GO_TO_DOOR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int GO_TO_DOOR = 6;$/;"	variable	line:29
+GO_TO_OWNER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int GO_TO_OWNER = 7;$/;"	variable	line:30
+GO_TO_BEHIND	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int GO_TO_BEHIND = 8;$/;"	variable	line:31
+GREETING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int GREETING = 9;$/;"	variable	line:32
+PLAY_WITH_OWNER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int PLAY_WITH_OWNER = 10;$/;"	variable	line:33
+PLAY_WITH_STRANGER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int PLAY_WITH_STRANGER = 11;$/;"	variable	line:34
+PLAY_WITH_UNFAMILIAR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int PLAY_WITH_UNFAMILIAR = 12;$/;"	variable	line:35
+LEADING_BEHAVIOR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int LEADING_BEHAVIOR = 13;$/;"	variable	line:36
+ATTENTION_GETTING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int ATTENTION_GETTING = 14;$/;"	variable	line:37
+DIRECTIONAL_SIGNAL	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int DIRECTIONAL_SIGNAL =15;$/;"	variable	line:38
+EXPLORE_TO_UNFAMILIAR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int EXPLORE_TO_UNFAMILIAR = 16;$/;"	variable	line:39
+PLAY_USING_BALL	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int PLAY_USING_BALL = 17;$/;"	variable	line:40
+GREETING_STRANGER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int GREETING_STRANGER = 18;$/;"	variable	line:41
+MISSING	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int MISSING = 19;$/;"	variable	line:42
+GREETING_STRANGER2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int GREETING_STRANGER2 = 20;$/;"	variable	line:43
+EXPLORE_TO_STRANGER2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int EXPLORE_TO_STRANGER2 = 21;$/;"	variable	line:44
+GO_TO_semiOWNER	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int GO_TO_semiOWNER = 22;$/;"	variable	line:45
+EXPLORE_TO_PERSON	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const int EXPLORE_TO_PERSON = 23;$/;"	variable	line:46
+ZPS_Xo	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^#define ZPS_Xo /;"	macro	line:49
+ZPS_Yo	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^#define ZPS_Yo /;"	macro	line:53
+RoomPoint	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^double RoomPoint[4] = {-3000.0 , 3000.0 , 3000.0 , 0.0};$/;"	variable	line:57
+NoEnter	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^double NoEnter[4] = {1000.0, 3000.0, 3000.0, 2000.0};$/;"	variable	line:58
+NoSleep	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^double NoSleep[4] = {-3000.0, 3000.0, 2000.0, 0.0};$/;"	variable	line:59
+NearDoor	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^double NearDoor[4] = {1500.0 , 3000.0 , 3000.0 , 2000.0};$/;"	variable	line:60
+Door	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const double Door[3] = {2900.0 , 2900.0 , 1000.0};\/\/{ x , y , z }$/;"	variable	line:65
+Door_x	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const double Door_x = 7800.0 - ZPS_Yo;$/;"	variable	line:72
+Door_y	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_id.hpp	/^const double Door_y = ZPS_Xo - (-1700.0 - 1500.0);$/;"	variable	line:73
+ModelThread_owner_begFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool ModelThread_owner_begFlag = false;$/;"	variable	line:4
+ModelThread_stranger_begFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool ModelThread_stranger_begFlag = false;$/;"	variable	line:5
+person	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int person = 10;\/\/実験時変更11 基本10$/;"	variable	line:11
+human_face_direction	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int human_face_direction = 0;$/;"	variable	line:12
+longtermO1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double longtermO1;$/;"	variable	line:16
+longtermO2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double longtermO2;$/;"	variable	line:17
+longtermO3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double longtermO3;$/;"	variable	line:18
+longtermS1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double longtermS1;$/;"	variable	line:19
+longtermS2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double longtermS2;$/;"	variable	line:20
+longtermS3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double longtermS3;$/;"	variable	line:21
+middletermO1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double middletermO1 = 0;$/;"	variable	line:22
+middletermO2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double middletermO2 = 0;$/;"	variable	line:23
+middletermO3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double middletermO3 = 0;$/;"	variable	line:24
+middletermS1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double middletermS1 = 0;$/;"	variable	line:25
+middletermS2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double middletermS2 = 0;$/;"	variable	line:26
+middletermS3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double middletermS3 = 0;$/;"	variable	line:27
+eventowner	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int eventowner = 0;$/;"	variable	line:32
+eventshagamu	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int eventshagamu = 0;$/;"	variable	line:33
+countthO	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool countthO = false;\/\/スレッドのたった時間をとる$/;"	variable	line:35
+Othread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool Othread = false;\/\/スレッド終了条件$/;"	variable	line:36
+plusO1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int plusO1 = 0;$/;"	variable	line:38
+plusO2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int plusO2 = 0;$/;"	variable	line:39
+plusO3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int plusO3 = 0;$/;"	variable	line:40
+minusO1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int minusO1 = 0;$/;"	variable	line:41
+minusO2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int minusO2 = 0;$/;"	variable	line:42
+minusO3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int minusO3 = 0;$/;"	variable	line:43
+KbO1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double KbO1 = 0.0;$/;"	variable	line:44
+KbO2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double KbO2 = 0.0;$/;"	variable	line:45
+KbO3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double KbO3 = 0.0;$/;"	variable	line:46
+passO	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double passO[2] = {0,0};$/;"	variable	line:47
+countthS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool countthS = false;\/\/スレッドのたった時間をとる$/;"	variable	line:54
+Sthread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool Sthread = false;\/\/スレッド終了条件$/;"	variable	line:55
+ftimeS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^clock_t ftimeS = 0;$/;"	variable	line:57
+plusflagS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool plusflagS = false;$/;"	variable	line:59
+minusflagS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool minusflagS = false;$/;"	variable	line:60
+plusS1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int plusS1 = 0;$/;"	variable	line:61
+plusS2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int plusS2 = 0;$/;"	variable	line:62
+plusS3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int plusS3 = 0;$/;"	variable	line:63
+minusS1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int minusS1 = 0;$/;"	variable	line:64
+minusS2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int minusS2 = 0;$/;"	variable	line:65
+minusS3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int minusS3= 0;$/;"	variable	line:66
+KbS1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double KbS1 = 0.0;$/;"	variable	line:67
+KbS2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double KbS2 = 0.0;$/;"	variable	line:68
+KbS3	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double KbS3 = 0.0;$/;"	variable	line:69
+passS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double passS[2] = {0,0};$/;"	variable	line:71
+sum	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double sum = 0.0;$/;"	variable	line:78
+sumhmove	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double sumhmove = 0.0;$/;"	variable	line:79
+distancepre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double distancepre = 0.0;$/;"	variable	line:80
+distancef	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double distancef = 0.0;$/;"	variable	line:81
+robotpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^Position robotpre = InitPose();$/;"	variable	line:82
+humanpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^Position humanpre = InitPose();$/;"	variable	line:83
+sumptf	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double sumptf = 0.0;$/;"	variable	line:84
+ptfmfirst	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^Position ptfmfirst = InitPose();$/;"	variable	line:85
+ptfflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool ptfflag = false;$/;"	variable	line:86
+dfirsttime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool dfirsttime = true;$/;"	variable	line:87
+firstclear	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool firstclear = false;$/;"	variable	line:88
+dMotionIDpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int dMotionIDpre = 0;$/;"	variable	line:89
+iita	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double iita = 1;$/;"	variable	line:90
+dsleepcount	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int dsleepcount = 3\/*150*\/;\/\/処理速度にあわせて変更$/;"	variable	line:91
+reset	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool reset = false;$/;"	variable	line:92
+humanZpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double humanZpre = 0;$/;"	variable	line:98
+humanZfirst	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^double humanZfirst = 0;$/;"	variable	line:99
+ptargethumanpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int ptargethumanpre = 0;$/;"	variable	line:100
+pfirsttime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool pfirsttime = true;$/;"	variable	line:101
+pmoveflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool pmoveflag = false;$/;"	variable	line:102
+MotionIDpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int MotionIDpre = 0;$/;"	variable	line:103
+psleepcount	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int psleepcount = 3\/*150*\/;$/;"	variable	line:104
+cli	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int cli;$/;"	variable	line:115
+frobotpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^Position frobotpre = InitPose();$/;"	variable	line:116
+directionpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int directionpre = 0;$/;"	variable	line:117
+fMotionIDpre	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int fMotionIDpre = 0;$/;"	variable	line:118
+ffirsttime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool ffirsttime = true;$/;"	variable	line:119
+fsleepcount	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^int fsleepcount = 3\/*150*\/;$/;"	variable	line:120
+pregoal	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^Position pregoal = InitPose();$/;"	variable	line:126
+passivefirst	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool passivefirst = false;$/;"	variable	line:151
+headfirst	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool headfirst = false;$/;"	variable	line:152
+exppfirst	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_kanaisan.hpp	/^bool exppfirst = false;$/;"	variable	line:153
+no_ball_count	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^int no_ball_count = 0;$/;"	variable	line:14
+last_ball_exist_time	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^clock_t last_ball_exist_time = 0;$/;"	variable	line:15
+no_ball_time	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double no_ball_time = 0;$/;"	variable	line:16
+ball_presence	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^bool ball_presence = false;$/;"	variable	line:17
+ball_previous_time	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^clock_t ball_previous_time = 0;$/;"	variable	line:18
+ball_time_interval	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double ball_time_interval = 0;$/;"	variable	line:19
+ball_distance	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double ball_distance[11] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};$/;"	variable	line:20
+ball_theta	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double ball_theta[11] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};$/;"	variable	line:21
+catch_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^bool catch_flag = false;$/;"	variable	line:22
+hand_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^int hand_flag = 0;$/;"	variable	line:23
+stop_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^int stop_flag = false;$/;"	variable	line:24
+circularity	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double circularity[16] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};$/;"	variable	line:25
+confidence_sum	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double confidence_sum[16] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};$/;"	variable	line:26
+SD	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double SD[16] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};$/;"	variable	line:27
+hark	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^struct hark_struct hark = {	0,$/;"	variable	line:30	typeref:struct:hark_struct
+sound_gaze	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^bool sound_gaze = false, sound_move = false;$/;"	variable	line:40
+sound_move	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^bool sound_gaze = false, sound_move = false;$/;"	variable	line:40
+sound_gaze_angle	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double sound_gaze_angle = 0;$/;"	variable	line:41
+time_hark_gaze_start	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^clock_t time_hark_gaze_start = 0;$/;"	variable	line:43
+gaze_time	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^double gaze_time = 0;$/;"	variable	line:44
+soundMoveFinishTime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^clock_t soundMoveFinishTime = 0;$/;"	variable	line:46
+soundMoveBeginTime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^clock_t soundMoveBeginTime = 0;$/;"	variable	line:47
+soundMoveFinishFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^bool soundMoveFinishFlag = 0;$/;"	variable	line:48
+cwd	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_declaration_tsukada.hpp	/^char cwd[255];$/;"	variable	line:51
+ZPSData	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_extern_basic.hpp	/^struct ZPSData$/;"	struct	line:64
+ZPSData	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_extern_basic.hpp	/^	ZPSData()$/;"	function	line:66	struct:ZPSData	signature:()
+tag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_extern_basic.hpp	/^	int tag; \/\/タグ番号$/;"	member	line:75	struct:ZPSData
+type	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_extern_basic.hpp	/^	char type; \/\/種類$/;"	member	line:76	struct:ZPSData
+pos	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_extern_basic.hpp	/^	float pos[3]; \/\/座標$/;"	member	line:78	struct:ZPSData
+ZPS_Xo	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_extern_id.hpp	/^#define ZPS_Xo /;"	macro	line:48
+ZPS_Yo	/Users/tsukadakaito/OneDrive/etho/ee/ee4/include/gv_extern_id.hpp	/^#define ZPS_Yo /;"	macro	line:52
+CC	/Users/tsukadakaito/OneDrive/etho/ee/ee4/Makefile	/^CC := g++ -std=c++11$/;"	macro	line:2
+CFLAGS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/Makefile	/^CFLAGS := -w -I.\/include$/;"	macro	line:3
+LDFLAGS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/Makefile	/^LDFLAGS := -framework GLUT -framework OpenGL -lpthread$/;"	macro	line:4
+OBJDIR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/Makefile	/^OBJDIR := .\/obj$/;"	macro	line:5
+SRCDIR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/Makefile	/^SRCDIR := .\/src$/;"	macro	line:6
+SRCS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/Makefile	/^SRCS := $(notdir $(wildcard $(SRCDIR)\/*.cpp))$/;"	macro	line:7
+OBJS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/Makefile	/^OBJS := $(addprefix $(OBJDIR)\/,$(SRCS:.cpp=.o))$/;"	macro	line:8
+TARGET	/Users/tsukadakaito/OneDrive/etho/ee/ee4/Makefile	/^TARGET := $(notdir $(CURDIR))$/;"	macro	line:9
+zps_robot_new	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/01_zps_new.cpp	/^bool zps_robot_new = false;$/;"	variable	line:17
+cri	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/01_zps_new.cpp	/^int cri;$/;"	variable	line:28
+NUM_OF_RECV_DATA	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/01_zps_new.cpp	/^const int NUM_OF_RECV_DATA = 33; \/\/ZPSからの受信データ長 固定$/;"	variable	line:29
+dist	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/01_zps_new.cpp	/^double dist(double x, double y)$/;"	function	line:32	signature:(double x, double y)
+siz	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/01_zps_new.cpp	/^double siz(double x, double y)$/;"	function	line:38	signature:(double x, double y)
+recvFixedData	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/01_zps_new.cpp	/^int recvFixedData()$/;"	function	line:46	signature:()
+ReceiveFromZPS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/01_zps_new.cpp	/^void ReceiveFromZPS()$/;"	function	line:250	signature:()
+distype	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^int distype = 0;$/;"	variable	line:33
+potentialFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^int potentialFlag = 0;\/\/tuika$/;"	variable	line:34
+stranger_ballflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^bool stranger_ballflag = false;$/;"	variable	line:36
+playcount	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^int playcount = 0;$/;"	variable	line:38
+mouseFlagR	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^bool mouseFlagR = false;$/;"	variable	line:39
+mouseFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^unsigned char mouseFlag = GL_FALSE;$/;"	variable	line:41
+drag_flag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^int drag_flag = 0;$/;"	variable	line:42
+display_switch	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^int display_switch = 1;$/;"	variable	line:43
+myReshape	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^void myReshape(int width_reshape, int height_reshape)$/;"	function	line:47	signature:(int width_reshape, int height_reshape)
+drawGoal	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^void drawGoal(Position current)$/;"	function	line:67	signature:(Position current)
+myDisplay	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^void myDisplay(void)$/;"	function	line:81	signature:(void)
+myKeyboard	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^void myKeyboard(unsigned char key, int x, int y)$/;"	function	line:264	signature:(unsigned char key, int x, int y)
+myMouseFunc	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^void myMouseFunc(int button, int state, int xx, int yy)$/;"	function	line:473	signature:(int button, int state, int xx, int yy)
+myMouseMotion	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^void myMouseMotion(int xx , int yy)$/;"	function	line:598	signature:(int xx , int yy)
+myInit	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^void myInit(char *progname)$/;"	function	line:671	signature:(char *progname)
+myTimer	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/02_gl.cpp	/^void myTimer(int value)$/;"	function	line:686	signature:(int value)
+pattern	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/03_potential.cpp	/^int pattern = 2;		\/\/実験でつかう　soh追加$/;"	variable	line:9
+updatePotential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/03_potential.cpp	/^void updatePotential()$/;"	function	line:11	signature:()
+PotentialThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/03_potential.cpp	/^void PotentialThread()$/;"	function	line:51	signature:()
+potentialPath	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/03_TKpote3.cpp	/^bool potentialPath(Position target, Position robot,int motionFlag)$/;"	function	line:25	signature:(Position target, Position robot,int motionFlag)
+tki_MAX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/03_TKpote3.cpp	/^#define tki_MAX /;"	macro	line:139	file:
+KnownAreaThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/04_known_area_thread.cpp	/^void KnownAreaThread()$/;"	function	line:10	signature:()
+ser_Pio	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+acc_Pio	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+ser_Pan	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+acc_Pan	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+ser_PF	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+acc_PF	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+send_cnt	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+ser_tale	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+acc_tale	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+ser_lrf	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+acc_lrf	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Pio, acc_Pio, ser_Pan, acc_Pan, ser_PF, acc_PF, send_cnt, ser_tale, acc_tale, ser_lrf, acc_lrf;$/;"	variable	line:21
+setMotion	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^void setMotion(char message[],int motionFlag)$/;"	function	line:29	signature:(char message[],int motionFlag)
+sndMotion	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int sndMotion()  \/\/ tk170111$/;"	function	line:107	signature:()
+ser_Deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int ser_Deg = 0;$/;"	variable	line:175
+PORT_Deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^unsigned short PORT_Deg = 45680;$/;"	variable	line:176
+acc_Deg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int acc_Deg = 0;$/;"	variable	line:177
+num_of_recv_pio	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^const int num_of_recv_pio = 50;$/;"	variable	line:178
+SendToOnboard	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^void SendToOnboard()$/;"	function	line:182	signature:()
+recvFromPioneer	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^int recvFromPioneer()$/;"	function	line:227	signature:()
+RecieveFromOnboard	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/05_connect_mc.cpp	/^void RecieveFromOnboard()$/;"	function	line:356	signature:()
+ser_HARK	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/06_connect_hark.cpp	/^int ser_HARK, acc_HARK;$/;"	variable	line:19
+acc_HARK	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/06_connect_hark.cpp	/^int ser_HARK, acc_HARK;$/;"	variable	line:19
+PORT_HARK	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/06_connect_hark.cpp	/^unsigned short PORT_HARK = 8765;$/;"	variable	line:20
+num_HARK	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/06_connect_hark.cpp	/^const int num_HARK = 65;$/;"	variable	line:21
+recvFromHARK	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/06_connect_hark.cpp	/^int recvFromHARK()$/;"	function	line:24	signature:()
+RecieveFromHARK	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/06_connect_hark.cpp	/^void RecieveFromHARK()$/;"	function	line:167	signature:()
+ModelThread_owner	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void ModelThread_owner()\/\/行動特性パラメータの変化モデルスレッドowner$/;"	function	line:23	signature:()
+ModelThread_stranger	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void ModelThread_stranger()\/\/行動特性パラメータの変化モデルスレッドstranger$/;"	function	line:258	signature:()
+evaluate_distance	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void evaluate_distance(Position humannow, int MotionID, int targethuman)$/;"	function	line:455	signature:(Position humannow, int MotionID, int targethuman)
+evaluate_posture	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void evaluate_posture(double humanZnow, int targethuman, int MotionID)$/;"	function	line:883	signature:(double humanZnow, int targethuman, int MotionID)
+ReceiveFromCamera	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void ReceiveFromCamera()$/;"	function	line:975	signature:()
+evaluate_face	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void evaluate_face(int MotionID, int targethuman)$/;"	function	line:1010	signature:(int MotionID, int targethuman)
+FileThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void FileThread()$/;"	function	line:1155	signature:()
+read_longterm_evaluation	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void read_longterm_evaluation()$/;"	function	line:1203	signature:()
+ModelThread_owner_Handler	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void ModelThread_owner_Handler()$/;"	function	line:1260	signature:()
+ModelThread_stranger_Handler	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/07_kanaisan.cpp	/^void ModelThread_stranger_Handler()$/;"	function	line:1273	signature:()
+randomflag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/08_1_goal.cpp	/^bool randomflag = false;$/;"	variable	line:12
+countrS	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/08_1_goal.cpp	/^int countrS = 0;$/;"	variable	line:13
+goalupdate	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/08_1_goal.cpp	/^Position goalupdate(Position decision, int human)$/;"	function	line:17	signature:(Position decision, int human)
+goalDecision	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/08_1_goal.cpp	/^Position goalDecision(int BehaviorID)\/\/2016\/6金井追加(人の位置がgoalのときgoalupdateへ、人の周りに行くときheadの向き(goalとは違う方向を向きたいときに設定)、なつき度変化の関数)$/;"	function	line:109	signature:(int BehaviorID)
+goalDecision2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/08_2_goalDecision2.cpp	/^Position goalDecision2(bool cognition)$/;"	function	line:14	signature:(bool cognition)
+ActivateBehavior	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/08_3_activate_behavior.cpp	/^int ActivateBehavior()$/;"	function	line:12	signature:()
+exploring	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^bool exploring(Position target)$/;"	function	line:12	signature:(Position target)
+attentionGetting	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^bool attentionGetting(void)$/;"	function	line:34	signature:(void)
+directionalSignal	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^bool directionalSignal()$/;"	function	line:51	signature:()
+leadingBehavior	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void leadingBehavior()$/;"	function	line:80	signature:()
+goToDoor	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void goToDoor()$/;"	function	line:97	signature:()
+soundBehavior	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void soundBehavior()$/;"	function	line:119	signature:()
+goToOwner	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void goToOwner()$/;"	function	line:131	signature:()
+missing	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void missing()$/;"	function	line:142	signature:()
+play	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void play()$/;"	function	line:154	signature:()
+greets	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void greets()$/;"	function	line:165	signature:()
+greets_to_stranger	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void greets_to_stranger()$/;"	function	line:177	signature:()
+greets_to_stranger2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void greets_to_stranger2()$/;"	function	line:189	signature:()
+explore	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void explore()$/;"	function	line:201	signature:()
+TargetDecision	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^Position TargetDecision(bool cognition)$/;"	function	line:217	signature:(bool cognition)
+passiveBehavior	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/09_behavior.cpp	/^void passiveBehavior()$/;"	function	line:329	signature:()
+CountThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/10_parameter.cpp	/^void CountThread()$/;"	function	line:12	signature:()
+MonitoringThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/10_parameter.cpp	/^void MonitoringThread()$/;"	function	line:48	signature:()
+StressThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/10_parameter.cpp	/^void StressThread()$/;"	function	line:521	signature:()
+BallThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/11_ball.cpp	/^void BallThread()$/;"	function	line:11	signature:()
+playUsingBall	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/11_ball.cpp	/^void playUsingBall()$/;"	function	line:181	signature:()
+randomflagM	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/12_motion.cpp	/^bool randomflagM = false;$/;"	variable	line:11
+selectMotionFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/12_motion.cpp	/^int selectMotionFlag(int now)$/;"	function	line:13	signature:(int now)
+MainThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/12_motion.cpp	/^void MainThread()\/\/行動選択スレッド$/;"	function	line:319	signature:()
+PrintfThread	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/99_print.cpp	/^void PrintfThread()$/;"	function	line:17	signature:()
+Ball	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^Ball::Ball()$/;"	function	line:7	class:Ball	signature:()
+setData	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^void Ball::setData(int mode , double global_x , double global_y)$/;"	function	line:27	class:Ball	signature:(int mode , double global_x , double global_y)
+setTarget	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^void Ball::setTarget(int attachment)$/;"	function	line:40	class:Ball	signature:(int attachment)
+dispStatus	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^void Ball::dispStatus()$/;"	function	line:50	class:Ball	signature:()
+draw	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^void Ball::draw()$/;"	function	line:72	class:Ball	signature:()
+setPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^void Ball::setPosition(double posX,double posY)$/;"	function	line:82	class:Ball	signature:(double posX,double posY)
+drawPower	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^void Ball::drawPower()$/;"	function	line:107	class:Ball	signature:()
+setPower	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^void Ball::setPower(int POW)$/;"	function	line:130	class:Ball	signature:(int POW)
+exist	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_ball.cpp	/^bool Ball::exist(double area[])$/;"	function	line:135	class:Ball	signature:(double area[])
+Dog	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^Dog::Dog()$/;"	function	line:12	class:Dog	signature:()
+setGoalPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setGoalPosition(Position setposition)$/;"	function	line:28	class:Dog	signature:(Position setposition)
+setPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setPosition(double posX,double posY, double degree)$/;"	function	line:36	class:Dog	signature:(double posX,double posY, double degree)
+setPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setPosition(double posX , double posY)$/;"	function	line:46	class:Dog	signature:(double posX , double posY)
+setPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setPosition(double posX , double posY,int simu)$/;"	function	line:57	class:Dog	signature:(double posX , double posY,int simu)
+setTransBodyDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setTransBodyDeg(double degree)$/;"	function	line:75	class:Dog	signature:(double degree)
+setTransBodyDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setTransBodyDeg()$/;"	function	line:82	class:Dog	signature:()
+getTransBodyDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^double Dog::getTransBodyDeg()$/;"	function	line:86	class:Dog	signature:()
+setFinalBodyDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setFinalBodyDeg(double degree)$/;"	function	line:92	class:Dog	signature:(double degree)
+setFinalBodyDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setFinalBodyDeg(Position target)$/;"	function	line:96	class:Dog	signature:(Position target)
+getFinalBodyDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^double Dog::getFinalBodyDeg()$/;"	function	line:100	class:Dog	signature:()
+setDrawBodyDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setDrawBodyDeg(double degree)$/;"	function	line:106	class:Dog	signature:(double degree)
+rotateSimRobot	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::rotateSimRobot()$/;"	function	line:114	class:Dog	signature:()
+setRobotDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setRobotDeg(double degree)$/;"	function	line:119	class:Dog	signature:(double degree)
+Head	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::Head(Position target)\/\/峻治追加$/;"	function	line:127	class:Dog	signature:(Position target)
+Head	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::Head(Position target, Position current, int motionID, double attachment)\/\/峻治追加$/;"	function	line:171	class:Dog	signature:(Position target, Position current, int motionID, double attachment)
+Head	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::Head(Position target, Position current, double attachment)\/\/峻治追加$/;"	function	line:195	class:Dog	signature:(Position target, Position current, double attachment)
+HeadTime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::HeadTime(double attachment)\/\/峻治追加$/;"	function	line:217	class:Dog	signature:(double attachment)
+attachment_Head	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::attachment_Head(double attachment)\/\/峻治未完成今後$/;"	function	line:222	class:Dog	signature:(double attachment)
+setAgreeCnt	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::setAgreeCnt(int a_cnt , int u_cnt){$/;"	function	line:229	class:Dog	signature:(int a_cnt , int u_cnt)
+disp	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::disp(){$/;"	function	line:235	class:Dog	signature:()
+drawFootMark	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void drawFootMark(Position point, bool lr)$/;"	function	line:240	signature:(Position point, bool lr)
+draw	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::draw(double RED, double GREEN, double BLUE,double radius, clock_t time, int robot_sim_or_not, double dis)$/;"	function	line:301	class:Dog	signature:(double RED, double GREEN, double BLUE,double radius, clock_t time, int robot_sim_or_not, double dis)
+draw2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::draw2(double RED, double GREEN, double BLUE,double radius, clock_t time)$/;"	function	line:385	class:Dog	signature:(double RED, double GREEN, double BLUE,double radius, clock_t time)
+updateKnownLevel	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^bool Dog::updateKnownLevel()$/;"	function	line:446	class:Dog	signature:()
+decreaseKnownLevel	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^bool Dog::decreaseKnownLevel()$/;"	function	line:474	class:Dog	signature:()
+getNumberOfKnownPlace	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^int Dog::getNumberOfKnownPlace()$/;"	function	line:490	class:Dog	signature:()
+drawKnownArea	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::drawKnownArea()$/;"	function	line:500	class:Dog	signature:()
+drawInnerState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::drawInnerState()$/;"	function	line:514	class:Dog	signature:()
+drawMode	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::drawMode()$/;"	function	line:721	class:Dog	signature:()
+drawMode2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^void Dog::drawMode2()\/\/kaita$/;"	function	line:760	class:Dog	signature:()
+exist	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^bool Dog::exist(double area[])$/;"	function	line:780	class:Dog	signature:(double area[])
+getValue	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^float Dog::getValue(short type)$/;"	function	line:789	class:Dog	signature:(short type)
+getState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_dog.cpp	/^short Dog::getState(short type)$/;"	function	line:815	class:Dog	signature:(short type)
+dis	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human-dog.cpp	/^float dis(float posX1, float posY1, float posX2, float posY2) {$/;"	function	line:9	signature:(float posX1, float posY1, float posX2, float posY2)
+dis_pioneer	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human-dog.cpp	/^double dis_pioneer(double start_x, double start_y, double goal_x, double goal_y)$/;"	function	line:33	signature:(double start_x, double start_y, double goal_x, double goal_y)
+text	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human-dog.cpp	/^void text(char moji[32], int plot_x, int plot_y)$/;"	function	line:46	signature:(char moji[32], int plot_x, int plot_y)
+Human	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^Human::Human(double value ,char type[], Color COLOR)$/;"	function	line:13	class:Human	signature:(double value ,char type[], Color COLOR)
+exist	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^bool Human::exist(double area[])$/;"	function	line:29	class:Human	signature:(double area[])
+setPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::setPosition(double posX , double posY , double posZ)$/;"	function	line:40	class:Human	signature:(double posX , double posY , double posZ)
+setPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::setPosition(double posX,double posY)$/;"	function	line:62	class:Human	signature:(double posX,double posY)
+getActivenessTo	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^short Human::getActivenessTo(Position target)$/;"	function	line:87	class:Human	signature:(Position target)
+FrontPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^Position Human::FrontPosition(int acceptance)$/;"	function	line:205	class:Human	signature:(int acceptance)
+BetweenPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^Position Human::BetweenPosition(Position target)$/;"	function	line:241	class:Human	signature:(Position target)
+BehindPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^Position Human::BehindPosition(Position target, int acceptance)$/;"	function	line:257	class:Human	signature:(Position target, int acceptance)
+movspeed	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^bool Human::movspeed(){$/;"	function	line:272	class:Human	signature:()
+disp	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::disp(){$/;"	function	line:279	class:Human	signature:()
+draw	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::draw()$/;"	function	line:285	class:Human	signature:()
+drawInnerState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::drawInnerState( int i )$/;"	function	line:324	class:Human	signature:( int i )
+getValue	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^float Human::getValue(short type)$/;"	function	line:364	class:Human	signature:(short type)
+getState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^short Human::getState(short type)$/;"	function	line:371	class:Human	signature:(short type)
+setOwnerFlag	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::setOwnerFlag(int flag){$/;"	function	line:377	class:Human	signature:(int flag)
+setDistanceRobot	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::setDistanceRobot(double area[], double rx, double ry, double rvx, double rvy){$/;"	function	line:382	class:Human	signature:(double area[], double rx, double ry, double rvx, double rvy)
+setStressState	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::setStressState(){$/;"	function	line:473	class:Human	signature:()
+setStress	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^void Human::setStress(short type, int typeM, int typeR, double sensitivity, float rate, int ms_d){$/;"	function	line:505	class:Human	signature:(short type, int typeM, int typeR, double sensitivity, float rate, int ms_d)
+~Human	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_human.cpp	/^Human::~Human()$/;"	function	line:582	class:Human	signature:()
+Obs	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_obstacle.cpp	/^Obs::Obs()$/;"	function	line:8	class:Obs	signature:()
+setData	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_obstacle.cpp	/^void Obs::setData(int mode , double global_x , double global_y)$/;"	function	line:24	class:Obs	signature:(int mode , double global_x , double global_y)
+draw	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_obstacle.cpp	/^void Obs::draw()$/;"	function	line:38	class:Obs	signature:()
+setPosition	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_obstacle.cpp	/^void Obs::setPosition(double posX,double posY)$/;"	function	line:48	class:Obs	signature:(double posX,double posY)
+exist	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_obstacle.cpp	/^bool Obs::exist(double area[])$/;"	function	line:58	class:Obs	signature:(double area[])
+gridnum1	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^#define gridnum1 /;"	macro	line:14	file:
+gridnum2	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^#define gridnum2 /;"	macro	line:18	file:
+PotentialField	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^PotentialField::PotentialField()$/;"	function	line:24	class:PotentialField	signature:()
+setPotential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^void PotentialField::setPotential(Position target, int acceptance)$/;"	function	line:66	class:PotentialField	signature:(Position target, int acceptance)
+setCombiPotential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^void PotentialField::setCombiPotential(Position target, int acceptance)$/;"	function	line:85	class:PotentialField	signature:(Position target, int acceptance)
+setAsymPotential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^void PotentialField::setAsymPotential(int getMotionID, Position target1, Position target2, int acceptance, int pattern, bool headflag)$/;"	function	line:120	class:PotentialField	signature:(int getMotionID, Position target1, Position target2, int acceptance, int pattern, bool headflag)
+getPotential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^double PotentialField::getPotential(double posx , double posy)$/;"	function	line:197	class:PotentialField	signature:(double posx , double posy)
+getPotential	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^double PotentialField::getPotential(Position target)$/;"	function	line:213	class:PotentialField	signature:(Position target)
+drawPotentialMap	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^void PotentialField::drawPotentialMap()$/;"	function	line:230	class:PotentialField	signature:()
+getMaxPotentialArea	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_potential_field.cpp	/^Position PotentialField::getMaxPotentialArea()$/;"	function	line:254	class:PotentialField	signature:()
+Room	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^Room::Room()$/;"	function	line:9	class:Room	signature:()
+drawBackground	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawBackground()$/;"	function	line:15	class:Room	signature:()
+drawRoom	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawRoom()$/;"	function	line:22	class:Room	signature:()
+drawNoEnterArea	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawNoEnterArea()$/;"	function	line:72	class:Room	signature:()
+drawNoSleepArea	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawNoSleepArea()$/;"	function	line:84	class:Room	signature:()
+drawParameterBar	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawParameterBar(short type, float value)$/;"	function	line:96	class:Room	signature:(short type, float value)
+drawTime	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawTime()$/;"	function	line:150	class:Room	signature:()
+drawKnownPlace	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawKnownPlace(int number_of_place)$/;"	function	line:168	class:Room	signature:(int number_of_place)
+drawGraph	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawGraph()$/;"	function	line:185	class:Room	signature:()
+drawParameter	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawParameter(double value1 , double value2 , double value3 , double value4)$/;"	function	line:358	class:Room	signature:(double value1 , double value2 , double value3 , double value4)
+drawGrid	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^void Room::drawGrid(int num1 , int num2)$/;"	function	line:683	class:Room	signature:(int num1 , int num2)
+~Room	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_room.cpp	/^Room::~Room()$/;"	function	line:702	class:Room	signature:()
+InitVec	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Vec InitVec()$/;"	function	line:9	signature:()
+InitPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position InitPose()\/\/構造体Positionの初期化関数$/;"	function	line:17	signature:()
+RED	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Color RED = {1.0 , 0.0 , 0.0 , 1.0};$/;"	variable	line:29
+GREEN	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Color GREEN = {0.0 , 1.0 , 0.0 , 1.0};$/;"	variable	line:30
+BLUE	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Color BLUE = {0.0 , 0.0 , 1.0 , 1.0};$/;"	variable	line:31
+calDistance	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calDistance(double dx , double dy)$/;"	function	line:36	signature:(double dx , double dy)
+calDistance	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calDistance(Position target, double pos_x,double pos_y)$/;"	function	line:40	signature:(Position target, double pos_x,double pos_y)
+calDistance	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calDistance(Position target1 , Position target2 )$/;"	function	line:44	signature:(Position target1 , Position target2 )
+calDegree	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calDegree(Position viewpoint , Position target)$/;"	function	line:48	signature:(Position viewpoint , Position target)
+calDegree	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calDegree(Position viewpoint ,double target_x ,double target_y)$/;"	function	line:54	signature:(Position viewpoint ,double target_x ,double target_y)
+calExp	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calExp(double distance)$/;"	function	line:60	signature:(double distance)
+calX	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calX(double distance)$/;"	function	line:64	signature:(double distance)
+addPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position addPose(Position object1 , Position object2)$/;"	function	line:68	signature:(Position object1 , Position object2)
+subtructPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position subtructPose(Position object1 , Position object2)$/;"	function	line:78	signature:(Position object1 , Position object2)
+subtructPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position subtructPose(double object1_x , double object1_y , Position object2)$/;"	function	line:88	signature:(double object1_x , double object1_y , Position object2)
+subtructPose2D	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position subtructPose2D(Position object1 , double object2_x ,double object2_y)$/;"	function	line:97	signature:(Position object1 , double object2_x ,double object2_y)
+multiplyPose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position multiplyPose(double factor_val ,  Position object)$/;"	function	line:106	signature:(double factor_val , Position object)
+dividePose	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position dividePose(double factor_val , Position object)$/;"	function	line:115	signature:(double factor_val , Position object)
+unitVector2D	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position unitVector2D(Position target , Position viewpoint)$/;"	function	line:124	signature:(Position target , Position viewpoint)
+unitVector2D	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position unitVector2D(double targetX , double targetY , Position viewpoint)$/;"	function	line:132	signature:(double targetX , double targetY , Position viewpoint)
+calVecVal	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calVecVal(Vec vec)$/;"	function	line:140	signature:(Vec vec)
+calVec	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Vec calVec(Position target , Position viewpoint)$/;"	function	line:145	signature:(Position target , Position viewpoint)
+devideVec	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Vec devideVec(double factor_val , Vec vec)$/;"	function	line:153	signature:(double factor_val , Vec vec)
+unitVector	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Vec unitVector(Position target , Position viewpoint)$/;"	function	line:160	signature:(Position target , Position viewpoint)
+inProduct	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double inProduct(Vec vec1, Vec vec2)$/;"	function	line:166	signature:(Vec vec1, Vec vec2)
+calTheta	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calTheta(Vec vec1 , Vec vec2) \/\/degree;$/;"	function	line:171	signature:(Vec vec1 , Vec vec2)
+calTheta	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double calTheta(Vec vec)$/;"	function	line:179	signature:(Vec vec)
+orthoDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double orthoDeg(double delta_y , double delta_x)$/;"	function	line:185	signature:(double delta_y , double delta_x)
+pid_posi	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^double pid_posi(double now_posi, double target_posi, double dt)\/\/soh追加$/;"	function	line:196	signature:(double now_posi, double target_posi, double dt)
+adjust_point	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/c_struct_position.cpp	/^Position adjust_point(Position place)$/;"	function	line:235	signature:(Position place)
+main	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/etho-engine.cpp	/^int main(int argc, char** argv)$/;"	function	line:41	signature:(int argc, char** argv)
+BACKLOG	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_uni.cpp	/^#define BACKLOG /;"	macro	line:14	file:
+TCPErr	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_uni.cpp	/^void TCPErr(const char* errmessage)$/;"	function	line:16	signature:(const char* errmessage)
+CreateTCPClientSocket	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_uni.cpp	/^int CreateTCPClientSocket(unsigned short port, const char* ip)$/;"	function	line:23	signature:(unsigned short port, const char* ip)
+CreateTCPServerSocket	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_uni.cpp	/^int CreateTCPServerSocket(unsigned short port)$/;"	function	line:44	signature:(unsigned short port)
+AcceptTCPClient	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_uni.cpp	/^int AcceptTCPClient(int sockSERrv)$/;"	function	line:79	signature:(int sockSERrv)
+TCPErr	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_win.cpp	/^void TCPErr(const char* errmessage)$/;"	function	line:15	signature:(const char* errmessage)
+CreateTCPServerSocket	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_win.cpp	/^SOCKET CreateTCPServerSocket(unsigned short port)$/;"	function	line:22	signature:(unsigned short port)
+AcceptTCPClient	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_win.cpp	/^SOCKET AcceptTCPClient(int sockSERrv)$/;"	function	line:57	signature:(int sockSERrv)
+CreateTCPClientSocket	/Users/tsukadakaito/OneDrive/etho/ee/ee4/src/tcpip_win.cpp	/^SOCKET CreateTCPClientSocket(unsigned short port, const char* ip)$/;"	function	line:79	signature:(unsigned short port, const char* ip)
+draw	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void Human::draw()$/;"	function	line:14	class:Human	signature:()
+drawInnerState	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void Human::drawInnerState( int i )$/;"	function	line:28	class:Human	signature:( int i )
+drawFootMark	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void drawFootMark(Position point, bool lr)$/;"	function	line:77	signature:(Position point, bool lr)
+draw	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void Dog::draw(double RED, double GREEN, double BLUE,double radius, clock_t time, int robot_sim_or_not, double dis)$/;"	function	line:139	class:Dog	signature:(double RED, double GREEN, double BLUE,double radius, clock_t time, int robot_sim_or_not, double dis)
+draw2	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void Dog::draw2(double RED, double GREEN, double BLUE,double radius, clock_t time)$/;"	function	line:223	class:Dog	signature:(double RED, double GREEN, double BLUE,double radius, clock_t time)
+decreaseKnownLevel	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^bool Dog::decreaseKnownLevel()$/;"	function	line:285	class:Dog	signature:()
+getNumberOfKnownPlace	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^int Dog::getNumberOfKnownPlace()$/;"	function	line:301	class:Dog	signature:()
+drawKnownArea	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void Dog::drawKnownArea()$/;"	function	line:311	class:Dog	signature:()
+drawInnerState	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void Dog::drawInnerState()$/;"	function	line:325	class:Dog	signature:()
+drawMode	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void Dog::drawMode()$/;"	function	line:437	class:Dog	signature:()
+drawMode2	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk_tmp_draw.cpp	/^void Dog::drawMode2()\/\/kaita$/;"	function	line:478	class:Dog	signature:()
+DataClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^class DataClass$/;"	class	line:11
+DataClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  DataClass(){};$/;"	function	line:14	class:DataClass	signature:()
+human	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  Position human[3];$/;"	member	line:29	class:DataClass
+robot	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  DATA_xy robot;$/;"	member	line:30	class:DataClass
+body_c	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  double body_c;$/;"	member	line:32	class:DataClass
+pan_c	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  double pan_c;$/;"	member	line:33	class:DataClass
+tilt_c	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  double tilt_c;$/;"	member	line:34	class:DataClass
+gripper_c	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  double gripper_c;$/;"	member	line:35	class:DataClass
+obstacle	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  DATA_obstacle obstacle[10] = {{-2500,3000,-2000,1500}, {-1500,1500,-1000,0}};$/;"	member	line:42	class:DataClass
+stress_pote	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  std::vector<std::vector<double>> stress_pote;$/;"	member	line:44	class:DataClass
+pf_goal	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  PotentialFunction pf_goal;$/;"	member	line:47	class:DataClass
+ball_tk	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  DATA_xy ball_tk = {3000, 3500};$/;"	member	line:53	class:DataClass
+ball_exists	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  bool ball_exists = false;$/;"	member	line:54	class:DataClass
+ball_is_Known_tk	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  bool ball_is_Known_tk = false;$/;"	member	line:55	class:DataClass
+sound_move	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  bool sound_move = false;$/;"	member	line:57	class:DataClass
+attachment_to_owner	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  double attachment_to_owner, attachment_to_stranger;$/;"	member	line:64	class:DataClass
+attachment_to_stranger	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  double attachment_to_owner, attachment_to_stranger;$/;"	member	line:64	class:DataClass
+human_p	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  PARMETER human_p[0];$/;"	member	line:65	class:DataClass
+ball_st	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  BALL ball_st;$/;"	member	line:70	class:DataClass
+ball_yo	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  BALL_yoheisan ball_yo;$/;"	member	line:71	class:DataClass
+motion_id	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  int motion_id;$/;"	member	line:74	class:DataClass
+command	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  COMMAND_set command;$/;"	member	line:79	class:DataClass
+sub_goal	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  DATA_xy sub_goal;$/;"	member	line:80	class:DataClass
+nazo	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  NAZO nazo;$/;"	member	line:92	class:DataClass
+DebugDataClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^class DebugDataClass$/;"	class	line:98
+low_grids	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  std::vector<DATA_grid_part> low_grids;$/;"	member	line:101	class:DebugDataClass
+ConfigDataClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^class ConfigDataClass$/;"	class	line:107
+shagamu	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  float shagamu = 600;\/\/650;$/;"	member	line:110	class:ConfigDataClass
+cwd	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk_data_class.hpp	/^  char cwd[255];$/;"	member	line:111	class:ConfigDataClass
+PathGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk41_PathGenerator.cpp	/^PathGenerator::PathGenerator(PotentialFunction ptf, std::vector<DATA_grid_part> low_grids_in, Position robot)$/;"	function	line:12	class:PathGenerator	signature:(PotentialFunction ptf, std::vector<DATA_grid_part> low_grids_in, Position robot)
+valley_judge	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk41_PathGenerator.cpp	/^bool PathGenerator::valley_judge(double x, double y)$/;"	function	line:20	class:PathGenerator	signature:(double x, double y)
+new_method	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk41_PathGenerator.cpp	/^bool PathGenerator::new_method(double x, double y, Position *value)$/;"	function	line:29	class:PathGenerator	signature:(double x, double y, Position *value)
+goal_reach_judge	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk41_PathGenerator.cpp	/^bool PathGenerator::goal_reach_judge(DATA_xy point)$/;"	function	line:89	class:PathGenerator	signature:(DATA_xy point)
+potential_barrier	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk41_PathGenerator.cpp	/^void PathGenerator::potential_barrier()$/;"	function	line:101	class:PathGenerator	signature:()
+generate_path	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk41_PathGenerator.cpp	/^std::vector<Position> PathGenerator::generate_path()$/;"	function	line:145	class:PathGenerator	signature:()
+gridnum1	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^#define gridnum1 /;"	macro	line:6
+gridnum2	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^#define gridnum2 /;"	macro	line:7
+PotentialFunction	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^class PotentialFunction$/;"	class	line:9
+condition	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^	bool condition;  \/\/ trueのとき、ゴールも計算する$/;"	member	line:21	class:PotentialFunction
+p_targetpose	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^	DATA_xy p_targetpose;$/;"	member	line:22	class:PotentialFunction
+p_owner	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^	DATA_human p_owner, p_stranger;$/;"	member	line:23	class:PotentialFunction
+p_stranger	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^	DATA_human p_owner, p_stranger;$/;"	member	line:23	class:PotentialFunction
+p_obstacle	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^	DATA_obstacle *p_obstacle;$/;"	member	line:24	class:PotentialFunction
+PotentialFunction	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^	PotentialFunction(){};$/;"	function	line:30	class:PotentialFunction	signature:()
+PotentialGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/l_tk_pote.hpp	/^class PotentialGenerator : public PotentialFunction$/;"	class	line:36
+attachment2distance	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^double PotentialFunction::attachment2distance(int attachment)$/;"	function	line:22	class:PotentialFunction	signature:(int attachment)
+calSlope	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^double PotentialFunction::calSlope(double x, double y, DATA_xy origin)$/;"	function	line:31	class:PotentialFunction	signature:(double x, double y, DATA_xy origin)
+calMountain	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^double PotentialFunction::calMountain(double x, double y, DATA_xy origin, double approach_distance)$/;"	function	line:38	class:PotentialFunction	signature:(double x, double y, DATA_xy origin, double approach_distance)
+calObstacle	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^double PotentialFunction::calObstacle(double x, double y, DATA_obstacle obstacle)$/;"	function	line:45	class:PotentialFunction	signature:(double x, double y, DATA_obstacle obstacle)
+potential	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^double PotentialFunction::potential(double x, double y)$/;"	function	line:63	class:PotentialFunction	signature:(double x, double y)
+potential_grid	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^double PotentialFunction::potential_grid(int i, int j)$/;"	function	line:83	class:PotentialFunction	signature:(int i, int j)
+PotentialGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^PotentialGenerator::PotentialGenerator()$/;"	function	line:94	class:PotentialGenerator	signature:()
+PotentialGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^PotentialGenerator::PotentialGenerator(Position human[], PARMETER human_p[], DATA_obstacle obstacle[])$/;"	function	line:98	class:PotentialGenerator	signature:(Position human[], PARMETER human_p[], DATA_obstacle obstacle[])
+PotentialGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^PotentialGenerator::PotentialGenerator(DATA_xy targetpose, Position human[], PARMETER human_p[], DATA_obstacle obstacle[])$/;"	function	line:102	class:PotentialGenerator	signature:(DATA_xy targetpose, Position human[], PARMETER human_p[], DATA_obstacle obstacle[])
+setParm	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^void PotentialGenerator::setParm(Position human[], PARMETER human_p[], DATA_obstacle obstacle[])$/;"	function	line:108	class:PotentialGenerator	signature:(Position human[], PARMETER human_p[], DATA_obstacle obstacle[])
+setParm	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^void PotentialGenerator::setParm(DATA_xy targetpose, Position human[], PARMETER human_p[], DATA_obstacle obstacle[])$/;"	function	line:118	class:PotentialGenerator	signature:(DATA_xy targetpose, Position human[], PARMETER human_p[], DATA_obstacle obstacle[])
+getPoteGridMap	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^std::vector<std::vector<double>> PotentialGenerator::getPoteGridMap()$/;"	function	line:129	class:PotentialGenerator	signature:()
+getlowestGrid	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^DATA_grid_part PotentialGenerator::getlowestGrid()$/;"	function	line:146	class:PotentialGenerator	signature:()
+getLowGrids	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/l_tk_pote.cpp	/^std::vector<DATA_grid_part> PotentialGenerator::getLowGrids()$/;"	function	line:167	class:PotentialGenerator	signature:()
+SubGoalGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk50_SubGoalGenerator.cpp	/^class SubGoalGenerator$/;"	class	line:9	file:
+p_route_point	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk50_SubGoalGenerator.cpp	/^  std::vector<Position> p_route_point;$/;"	member	line:12	class:SubGoalGenerator	file:
+SubGoalGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk50_SubGoalGenerator.cpp	/^SubGoalGenerator::SubGoalGenerator(std::vector<Position> p_route_point_in)$/;"	function	line:20	class:SubGoalGenerator	signature:(std::vector<Position> p_route_point_in)
+generateSubGoal	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk50_SubGoalGenerator.cpp	/^DATA_xy SubGoalGenerator::generateSubGoal(DATA_xy robot_in)$/;"	function	line:26	class:SubGoalGenerator	signature:(DATA_xy robot_in)
+PathGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk41_PathGenerator.hpp	/^class PathGenerator$/;"	class	line:9
+p_ptf	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk41_PathGenerator.hpp	/^  PotentialFunction p_ptf;$/;"	member	line:19	class:PathGenerator
+p_robot	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk41_PathGenerator.hpp	/^  Position p_robot;$/;"	member	line:20	class:PathGenerator
+p_tki_length	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk41_PathGenerator.hpp	/^  int p_tki_length = tki_MAX;$/;"	member	line:23	class:PathGenerator
+p_route_point	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk41_PathGenerator.hpp	/^  std::vector<Position> p_route_point;$/;"	member	line:26	class:PathGenerator
+low_grids	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk41_PathGenerator.hpp	/^  std::vector<DATA_grid_part> low_grids;$/;"	member	line:27	class:PathGenerator
+SubGoalGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk51_SubGoalGenerator.cpp	/^SubGoalGenerator::SubGoalGenerator(std::vector<Position> p_route_point_in)$/;"	function	line:4	class:SubGoalGenerator	signature:(std::vector<Position> p_route_point_in)
+generateSubGoal	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk51_SubGoalGenerator.cpp	/^DATA_xy SubGoalGenerator::generateSubGoal(DATA_xy robot_in, double speed_in)$/;"	function	line:10	class:SubGoalGenerator	signature:(DATA_xy robot_in, double speed_in)
+SubGoalGenerator	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk51_SubGoalGenerator.hpp	/^class SubGoalGenerator$/;"	class	line:9
+p_route_point	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk51_SubGoalGenerator.hpp	/^  std::vector<Position> p_route_point;$/;"	member	line:12	class:SubGoalGenerator
+ZPSDATA	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/gv_extern_basic.hpp	/^#define ZPSDATA$/;"	macro	line:60
+ZPSData	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/gv_extern_basic.hpp	/^struct ZPSData$/;"	struct	line:61
+ZPSData	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/gv_extern_basic.hpp	/^	ZPSData()$/;"	function	line:63	struct:ZPSData	signature:()
+tag	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/gv_extern_basic.hpp	/^	int tag; \/\/タグ番号$/;"	member	line:72	struct:ZPSData
+type	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/gv_extern_basic.hpp	/^	char type; \/\/種類$/;"	member	line:73	struct:ZPSData
+pos	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/gv_extern_basic.hpp	/^	float pos[3]; \/\/座標$/;"	member	line:75	struct:ZPSData
+ActivateBehavior	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk31_ActivateBehavior.cpp	/^int ActivateBehavior()$/;"	function	line:12	signature:()
+set_parm	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^void MotionClass::set_parm(DataClass all_data_in)$/;"	function	line:14	class:MotionClass	signature:(DataClass all_data_in)
+goTohuman_simple	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^COMMAND_set MotionClass::goTohuman_simple()$/;"	function	line:20	class:MotionClass	signature:()
+ballChase	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^COMMAND_set MotionClass::ballChase()$/;"	function	line:53	class:MotionClass	signature:()
+ballLookAround	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^COMMAND_set MotionClass::ballLookAround()$/;"	function	line:78	class:MotionClass	signature:()
+ballCatch	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^COMMAND_set MotionClass::ballCatch()$/;"	function	line:103	class:MotionClass	signature:()
+ballCarry	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^void ballCarry(){}$/;"	function	line:128	signature:()
+ballRelease	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^void ballRelease(){}$/;"	function	line:129	signature:()
+BehaviorClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^BehaviorClass::BehaviorClass(DataClass all_data_in)$/;"	function	line:136	class:BehaviorClass	signature:(DataClass all_data_in)
+act	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^COMMAND_set BallPlay::act()$/;"	function	line:144	class:BallPlay	signature:()
+act	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk32_Behavior_new.cpp	/^COMMAND_set MissingClass::act()$/;"	function	line:247	class:MissingClass	signature:()
+MotionClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^class MotionClass$/;"	class	line:31
+d	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	DataClass d;$/;"	member	line:35	class:MotionClass
+MotionClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	MotionClass(){};$/;"	function	line:37	class:MotionClass	signature:()
+ballCarry	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^  void ballCarry(){}$/;"	function	line:45	class:MotionClass	signature:()
+ballRelease	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^  void ballRelease(){}$/;"	function	line:46	class:MotionClass	signature:()
+BehaviorClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^class BehaviorClass$/;"	class	line:50
+d	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	DataClass d;$/;"	member	line:54	class:BehaviorClass
+motion	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	MotionClass motion;$/;"	member	line:55	class:BehaviorClass
+BehaviorClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^  BehaviorClass(){};$/;"	function	line:57	class:BehaviorClass	signature:()
+time_last	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	std::chrono::system_clock::time_point time_last;$/;"	member	line:61	class:BehaviorClass
+time_now	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	std::chrono::system_clock::time_point time_now;$/;"	member	line:62	class:BehaviorClass
+duration	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	double duration;$/;"	member	line:63	class:BehaviorClass
+interval	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^  double interval;$/;"	member	line:64	class:BehaviorClass
+method_num_pre	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	int method_num_pre = 0;$/;"	member	line:67	class:BehaviorClass
+method_num	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	int method_num = 0;$/;"	member	line:68	class:BehaviorClass
+behavior_changeable_level	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^	int behavior_changeable_level = 0;$/;"	member	line:71	class:BehaviorClass
+BallPlay	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^class BallPlay : public BehaviorClass$/;"	class	line:78
+MissingClass	/Users/tsukadakaito/OneDrive/etho/ee/ee6/include/tk32_Behavior_new.hpp	/^class MissingClass : public BehaviorClass$/;"	class	line:86
+MainThread	/Users/tsukadakaito/OneDrive/etho/ee/ee6/src/tk0_MainThread.cpp	/^void MainThread()$/;"	function	line:24	signature:()
+RobotSimulatorClass	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^RobotSimulatorClass::RobotSimulatorClass(int speed_times_in)$/;"	function	line:11	class:RobotSimulatorClass	signature:(int speed_times_in)
+loop	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::loop()$/;"	function	line:17	class:RobotSimulatorClass	signature:()
+moveLoopThreadBegin	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::moveLoopThreadBegin()$/;"	function	line:38	class:RobotSimulatorClass	signature:()
+moveLoopThreadFinish	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::moveLoopThreadFinish()$/;"	function	line:43	class:RobotSimulatorClass	signature:()
+~RobotSimulatorClass	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^RobotSimulatorClass::~RobotSimulatorClass()$/;"	function	line:58	class:RobotSimulatorClass	signature:()
+sendData	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::sendData(DATA_xy subgoal_in, COMMAND_set command_in)$/;"	function	line:63	class:RobotSimulatorClass	signature:(DATA_xy subgoal_in, COMMAND_set command_in)
+robotMove	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::robotMove()$/;"	function	line:83	class:RobotSimulatorClass	signature:()
+bodyRotate	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::bodyRotate()$/;"	function	line:109	class:RobotSimulatorClass	signature:()
+pantiltRotate	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::pantiltRotate()$/;"	function	line:124	class:RobotSimulatorClass	signature:()
+receiveDataLocation	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::receiveDataLocation(DataClass *data_in)$/;"	function	line:130	class:RobotSimulatorClass	signature:(DataClass *data_in)
+receiveDataDeg	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk61_RobotSimulator.cpp	/^void RobotSimulatorClass::receiveDataDeg(DataClass *data_in)$/;"	function	line:136	class:RobotSimulatorClass	signature:(DataClass *data_in)
+disp_bar	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk0_MainThread.cpp	/^void disp_bar(char title[], double previous, double current)$/;"	function	line:31	signature:(char title[], double previous, double current)
+calcBallParm	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk0_MainThread.cpp	/^void calcBallParm(DataClass *data_in)$/;"	function	line:45	signature:(DataClass *data_in)
+MainThread	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk0_MainThread.cpp	/^void MainThread()$/;"	function	line:82	signature:()
+BehaviorClass	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk31_BehaviorBase.hpp	/^class BehaviorClass$/;"	class	line:11
+~BehaviorClass	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk31_BehaviorBase.hpp	/^	virtual ~BehaviorClass(){};$/;"	function	line:22	class:BehaviorClass	signature:()
+data	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk31_BehaviorBase.hpp	/^	DataClass *data;$/;"	member	line:27	class:BehaviorClass
+command	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk31_BehaviorBase.hpp	/^	COMMAND_set command;$/;"	member	line:47	class:BehaviorClass
+MotionClass	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^class MotionClass$/;"	class	line:9
+d	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	DataClass d;$/;"	member	line:13	class:MotionClass
+MotionClass	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	MotionClass(){};$/;"	function	line:15	class:MotionClass	signature:()
+ballCarry	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^  void ballCarry(){}$/;"	function	line:24	class:MotionClass	signature:()
+ballRelease	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^  void ballRelease(){}$/;"	function	line:25	class:MotionClass	signature:()
+BallPlay_BC	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^class BallPlay_BC : public BehaviorClass$/;"	class	line:28
+motion	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	MotionClass motion;$/;"	member	line:31	class:BallPlay_BC
+time_ini	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	std::chrono::system_clock::time_point time_ini;$/;"	member	line:34	class:BallPlay_BC
+time_now	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	std::chrono::system_clock::time_point time_now;$/;"	member	line:35	class:BallPlay_BC
+duration	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	double duration = 0;$/;"	member	line:36	class:BallPlay_BC
+interval	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^  double interval = 0;$/;"	member	line:37	class:BallPlay_BC
+time_action_ini	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	std::chrono::system_clock::time_point time_action_ini;$/;"	member	line:40	class:BallPlay_BC
+action_duration	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	double action_duration = 0;$/;"	member	line:41	class:BallPlay_BC
+action_num_pre	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	int action_num_pre = 0;$/;"	member	line:44	class:BallPlay_BC
+action_num	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	int action_num = 0;$/;"	member	line:45	class:BallPlay_BC
+behavior_changeable_level	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	int behavior_changeable_level = 0;$/;"	member	line:48	class:BallPlay_BC
+BallPlay_BC	/Users/tsukadakaito/OneDrive/etho/ee/ee8/include/tk33_BallPlayBehavior.hpp	/^	BallPlay_BC(DataClass *data_in) : BehaviorClass(data_in)$/;"	function	line:52	class:BallPlay_BC	signature:(DataClass *data_in)
+set_parm	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void MotionClass::set_parm(DataClass all_data_in)$/;"	function	line:10	class:MotionClass	signature:(DataClass all_data_in)
+goTohuman_simple	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::goTohuman_simple()$/;"	function	line:16	class:MotionClass	signature:()
+goToNONhuman_simple	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::goToNONhuman_simple()$/;"	function	line:51	class:MotionClass	signature:()
+ballChase	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::ballChase()$/;"	function	line:84	class:MotionClass	signature:()
+ballLookAround	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::ballLookAround()$/;"	function	line:109	class:MotionClass	signature:()
+ballCatch	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::ballCatch()$/;"	function	line:134	class:MotionClass	signature:()
+ballCarry	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void ballCarry(){}$/;"	function	line:159	signature:()
+ballRelease	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void ballRelease(){}$/;"	function	line:160	signature:()
+setAction	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void BallPlay_BC::setAction(int action_num)$/;"	function	line:164	class:BallPlay_BC	signature:(int action_num)
+getActionDuration	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^double BallPlay_BC::getActionDuration()$/;"	function	line:170	class:BallPlay_BC	signature:()
+behavior	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void BallPlay_BC::behavior()$/;"	function	line:176	class:BallPlay_BC	signature:()

@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+set_parm	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void MotionClass::set_parm(DataClass all_data_in)$/;"	function	line:10	class:MotionClass	signature:(DataClass all_data_in)
+goTohuman_simple	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::goTohuman_simple()$/;"	function	line:16	class:MotionClass	signature:()
+goToNONhuman_simple	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::goToNONhuman_simple()$/;"	function	line:51	class:MotionClass	signature:()
+ballChase	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::ballChase()$/;"	function	line:84	class:MotionClass	signature:()
+ballLookAround	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::ballLookAround()$/;"	function	line:109	class:MotionClass	signature:()
+ballCatch	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^COMMAND_set MotionClass::ballCatch()$/;"	function	line:134	class:MotionClass	signature:()
+ballCarry	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void ballCarry(){}$/;"	function	line:159	signature:()
+ballRelease	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void ballRelease(){}$/;"	function	line:160	signature:()
+setAction	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void BallPlay_BC::setAction(int action_num)$/;"	function	line:164	class:BallPlay_BC	signature:(int action_num)
+getActionDuration	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^double BallPlay_BC::getActionDuration()$/;"	function	line:170	class:BallPlay_BC	signature:()
+behavior	/Users/tsukadakaito/OneDrive/etho/ee/ee8/src/tk43_BallPlayBehavior.cpp	/^void BallPlay_BC::behavior()$/;"	function	line:176	class:BallPlay_BC	signature:()

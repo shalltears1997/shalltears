@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- シミュレータ / 実機 -->
+<connection>
+    <poR>1</poR>
+    <poO>1</poO>
+    <poS>1</poS>
+    <poF>1</poF>
+    <HARK_connect>1</HARK_connect>
+    <ROBOT>1</ROBOT>
+</connection>
+
+<!-- その他設定 -->
+<setting>
+    <change_attachment>2</change_attachment>
+
+    <!-- 0:愛着行動　1:ランダムモデル -->
+    <random_model>0</random_model>
+
+    <!-- 0:通常　1:実験用（O/SとZPSタグの関係がランダム） -->
+    <exp_condition>0</exp_condition>
+
+    <simRefreshRatio_clock>100</simRefreshRatio_clock>
+</setting>

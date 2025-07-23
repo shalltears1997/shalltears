@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- シミュレータ / 実機 -->
+<!-- Simulator / Real machine -->
+
+<connection>
+    <!-- position of Robot - 1: from Unity? -->
+    <poR>1</poR>
+
+    <!-- position of Owner - 1: from ZonePositioningSystem -->
+    <poO>1</poO>
+
+    <!-- position of Stranger - 1: from ZonePositioningSystem -->
+    <poS>1</poS>
+
+    <!-- position of F? - 1: from ZonePositioningSystem -->
+    <poF>0</poF>
+
+    <!-- Sound data? -->
+    <HARK_connect>0</HARK_connect>
+
+    <!-- 0: Robot simulator, 1: Real Robot?, 2: No robot - just display? -->
+    <ROBOT>2</ROBOT>
+
+    <!-- 0: do not send data to Observer (SST), 1: send position data to Observer (SST) -->
+    <Observer_connect>0</Observer_connect>
+    <Observer_connect_to_IP>133.91.73.207</Observer_connect_to_IP>
+    <!-- 1: smallest, 1000: largest -->
+    <Observer_profile_dogradius>80</Observer_profile_dogradius>
+    <Observer_profile_ownerradius>55</Observer_profile_ownerradius>
+    <Observer_profile_strangerradius>55</Observer_profile_strangerradius>
+    <Observer_profile_toyradius>15</Observer_profile_toyradius>
+    <!-- 0 means to use the default values of obs_PARAM_* -->
+    <!-- obs_PARAM_* range: 1-1000 -->
+    <Observer_profile_obs_PARAM_near_human>0</Observer_profile_obs_PARAM_near_human>
+    <Observer_profile_obs_PARAM_near_human_after_dropped_toy>0</Observer_profile_obs_PARAM_near_human_after_dropped_toy>
+    <Observer_profile_obs_PARAM_near_toy>0</Observer_profile_obs_PARAM_near_toy>
+    <Observer_profile_obs_PARAM_near_door>0</Observer_profile_obs_PARAM_near_door>
+    <Observer_profile_obs_PARAM_far_from_door>0</Observer_profile_obs_PARAM_far_from_door>
+    <Observer_profile_obs_PARAM_contactdist>0</Observer_profile_obs_PARAM_contactdist>
+</connection>
+
+<!-- その他設定 -->
+<!-- Other settings -->
+
+<setting>
+    <change_attachment>2</change_attachment>
+
+    <!-- 0:愛着行動　1:ランダムモデル -->
+    <!-- 0: Attachment behavior 1: Random model -->
+    <random_model>0</random_model>
+
+    <!-- 0:通常　1:実験用（O/SとZPSタグの関係がランダム） -->
+    <!-- 0: Normal  1: For experimental use (random relationship between O/S and ZPS tags) -->
+    <exp_condition>0</exp_condition>
+
+    <!-- in msec? -->
+    <simRefreshRatio_clock>100</simRefreshRatio_clock>
+</setting>

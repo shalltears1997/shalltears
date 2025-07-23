@@ -1,0 +1,60 @@
+#include <iostream>
+#include <cmath>
+#include <chrono>
+#include <ctime>
+#include <termios.h>
+#include "nk_Vocalization.hpp"
+#include "class.hpp"
+#include "gv_extern.hpp"
+
+double Vocalization::activation(DATA_xy robot, double miss, double anxiety, double moving_stress)
+{
+	double d_min = calDistance(robot, min_pote);
+	double d_max = calDistance(robot, max_pote);
+
+	double robot_potential = data.dMiss_score[double2grid_x(robot.x)][double2grid_y(robot.y)];
+
+	double c_a =  data.dAnxiety_score[double2grid_x(robot.x)][double2grid_y(robot.y)] * -3;
+
+	double c_m = (robot_potential / max_stress_potential)*1.5 + (robot_potential / min_stress_potential)*3;
+
+	//print_delta = (robot_potential / max_stress_potential)*1.5;
+	//print_delta2 = (robot_potential / min_stress_potential)*3;
+	//print_delta2 = max_stress_potential;
+
+	if(c_m < -20)
+	{
+		c_m = -20;
+	}
+	else if(c_m > 2)
+	{
+		c_m = 2;
+	}
+
+	if(c_a > 2)
+	{
+		c_a = 2;
+	}
+	else if(c_a < -200)
+	{
+		c_a = -200;
+	}
+	
+
+	vocal_pote = c_m * (miss / (miss + anxiety + 1)) + c_a * (anxiety / (miss + anxiety + 1));
+
+/*
+	if(miss > anxiety)
+	{
+		vocal_pote = c_m;
+	}
+	else
+	{
+		vocal_pote = c_a;
+	}*/
+
+	//print_delta2 = vocal_pote;
+
+	return flag;
+	//return vocal_pote;
+}

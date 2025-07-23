@@ -1,0 +1,22 @@
+lightrover_ros
+/home/pi/catkin_ws/devel/.private/lightrover_ros/cmake.lock /home/pi/catkin_ws/devel/./cmake.lock
+/home/pi/catkin_ws/devel/.private/lightrover_ros/include/lightrover_ros/Wrc201MsgResponse.h /home/pi/catkin_ws/devel/include/lightrover_ros/Wrc201MsgResponse.h
+/home/pi/catkin_ws/devel/.private/lightrover_ros/include/lightrover_ros/Wrc201MsgRequest.h /home/pi/catkin_ws/devel/include/lightrover_ros/Wrc201MsgRequest.h
+/home/pi/catkin_ws/devel/.private/lightrover_ros/include/lightrover_ros/Wrc201Msg.h /home/pi/catkin_ws/devel/include/lightrover_ros/Wrc201Msg.h
+/home/pi/catkin_ws/devel/.private/lightrover_ros/lib/pkgconfig/lightrover_ros.pc /home/pi/catkin_ws/devel/lib/pkgconfig/lightrover_ros.pc
+/home/pi/catkin_ws/devel/.private/lightrover_ros/lib/python3/dist-packages/lightrover_ros/__init__.py /home/pi/catkin_ws/devel/lib/python3/dist-packages/lightrover_ros/__init__.py
+/home/pi/catkin_ws/devel/.private/lightrover_ros/lib/python3/dist-packages/lightrover_ros/srv/_Wrc201Msg.py /home/pi/catkin_ws/devel/lib/python3/dist-packages/lightrover_ros/srv/_Wrc201Msg.py
+/home/pi/catkin_ws/devel/.private/lightrover_ros/lib/python3/dist-packages/lightrover_ros/srv/__init__.py /home/pi/catkin_ws/devel/lib/python3/dist-packages/lightrover_ros/srv/__init__.py
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/roseus/ros/lightrover_ros/manifest.l /home/pi/catkin_ws/devel/share/roseus/ros/lightrover_ros/manifest.l
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/roseus/ros/lightrover_ros/srv/Wrc201Msg.l /home/pi/catkin_ws/devel/share/roseus/ros/lightrover_ros/srv/Wrc201Msg.l
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/common-lisp/ros/lightrover_ros/srv/_package.lisp /home/pi/catkin_ws/devel/share/common-lisp/ros/lightrover_ros/srv/_package.lisp
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/common-lisp/ros/lightrover_ros/srv/_package_Wrc201Msg.lisp /home/pi/catkin_ws/devel/share/common-lisp/ros/lightrover_ros/srv/_package_Wrc201Msg.lisp
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/common-lisp/ros/lightrover_ros/srv/Wrc201Msg.lisp /home/pi/catkin_ws/devel/share/common-lisp/ros/lightrover_ros/srv/Wrc201Msg.lisp
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/common-lisp/ros/lightrover_ros/srv/lightrover_ros-srv.asd /home/pi/catkin_ws/devel/share/common-lisp/ros/lightrover_ros/srv/lightrover_ros-srv.asd
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/gennodejs/ros/lightrover_ros/_index.js /home/pi/catkin_ws/devel/share/gennodejs/ros/lightrover_ros/_index.js
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/gennodejs/ros/lightrover_ros/srv/Wrc201Msg.js /home/pi/catkin_ws/devel/share/gennodejs/ros/lightrover_ros/srv/Wrc201Msg.js
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/gennodejs/ros/lightrover_ros/srv/_index.js /home/pi/catkin_ws/devel/share/gennodejs/ros/lightrover_ros/srv/_index.js
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/lightrover_ros/cmake/lightrover_rosConfig-version.cmake /home/pi/catkin_ws/devel/share/lightrover_ros/cmake/lightrover_rosConfig-version.cmake
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/lightrover_ros/cmake/lightrover_ros-msg-extras.cmake /home/pi/catkin_ws/devel/share/lightrover_ros/cmake/lightrover_ros-msg-extras.cmake
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/lightrover_ros/cmake/lightrover_rosConfig.cmake /home/pi/catkin_ws/devel/share/lightrover_ros/cmake/lightrover_rosConfig.cmake
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/lightrover_ros/cmake/lightrover_ros-msg-paths.cmake /home/pi/catkin_ws/devel/share/lightrover_ros/cmake/lightrover_ros-msg-paths.cmake

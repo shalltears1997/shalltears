@@ -1,0 +1,2 @@
+[ 50%] [32m[1mLinking CXX executable /home/pi/catkin_ws/devel/.private/ydlidar_ros_driver/lib/ydlidar_ros_driver/ydlidar_ros_driver_node[0m
+[100%] Built target ydlidar_ros_driver_node

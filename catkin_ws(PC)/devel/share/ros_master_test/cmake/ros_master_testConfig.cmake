@@ -1,0 +1,1 @@
+/home/niitsuma/catkin_ws/devel/.private/ros_master_test/share/ros_master_test/cmake/ros_master_testConfig.cmake

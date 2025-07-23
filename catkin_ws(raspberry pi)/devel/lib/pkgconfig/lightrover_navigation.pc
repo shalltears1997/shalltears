@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/lightrover_navigation/lib/pkgconfig/lightrover_navigation.pc

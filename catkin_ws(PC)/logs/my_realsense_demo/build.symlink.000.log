@@ -1,0 +1,5 @@
+Symlinking /home/niitsuma/catkin_ws/devel/share/my_realsense_demo/cmake/my_realsense_demoConfig.cmake
+Symlinking /home/niitsuma/catkin_ws/devel/share/my_realsense_demo/cmake/my_realsense_demoConfig-version.cmake
+Symlinking /home/niitsuma/catkin_ws/devel/lib/my_realsense_demo/cmake.lock
+Symlinking /home/niitsuma/catkin_ws/devel/lib/my_realsense_demo/face_recognizer_ros.py
+Symlinking /home/niitsuma/catkin_ws/devel/lib/pkgconfig/my_realsense_demo.pc

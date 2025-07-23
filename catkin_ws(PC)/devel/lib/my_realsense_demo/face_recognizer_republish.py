@@ -1,0 +1,1 @@
+/home/niitsuma/catkin_ws/devel/.private/my_realsense_demo/lib/my_realsense_demo/face_recognizer_republish.py

@@ -1,0 +1,64 @@
+## global costmap params for lightROVER
+#
+#global_costmap:
+#  plugins:
+#    - {name: static_layer,    type: "costmap_2d::StaticLayer"}
+#    - {name: obstacle_layer,  type: "costmap_2d::ObstacleLayer"}
+#    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+#
+#  # 各TFフレーム名の設定
+#  global_frame: map
+#  robot_base_frame: base_link
+#
+#  # 更新頻度
+#  # update_frequency: 1.0
+#   # 更新頻度
+#  update_frequency: 2.0
+#
+#  # タイムスタンプの差の許容量
+#  #transform_tolerance: 5.0
+#  # タイムスタンプの差の許容量
+#  transform_tolerance: 0.5
+#
+#  static_layer:
+#    enabled: true
+#############################################################################################
+
+
+
+# lightrover_global_costmap_params.yaml
+
+global_costmap:
+  # 坐标系
+  global_frame: map
+  robot_base_frame: base_link
+
+  # 更新频率
+  update_frequency: 2.0
+  transform_tolerance: 0.5
+
+  # 插件列表
+  plugins:
+    - {name: static_layer,       type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer,     type: "costmap_2d::ObstacleLayer"}
+    - {name: edge_obstacle_layer,type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer,    type: "costmap_2d::InflationLayer"}
+
+  static_layer:
+    enabled: true
+    # map_topic: /map  # 若要自定义
+
+  obstacle_layer:
+    # 这里可覆盖 or 追加配置
+    # 或者留空，反正 common_params 已经定义
+    enabled: true
+
+  edge_obstacle_layer:
+    # 若需要覆盖或不同配置，也可在这里再写
+    enabled: true
+
+  inflation_layer:
+    enabled: true
+
+
+

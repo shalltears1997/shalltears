@@ -1,0 +1,8 @@
+prefix=/home/pi/catkin_ws/install
+
+Name: lightrover_navigation
+Description: Description of lightrover_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

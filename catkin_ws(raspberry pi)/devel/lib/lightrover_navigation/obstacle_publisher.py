@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/lightrover_navigation/lib/lightrover_navigation/obstacle_publisher.py

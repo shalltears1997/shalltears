@@ -1,0 +1,18 @@
+<launch>
+  <!-- 启动传感器数据发布节点 -->
+  <node name="vl53l0x_publisher" pkg="lightrover_navigation" type="vl53l0x_publisher.py" output="screen"/>
+
+  <!-- 启动边缘检测节点 -->
+  <node name="edge_detector" pkg="lightrover_navigation" type="edge_detector.py" output="screen">
+    <param name="distance_threshold" value="20"/> <!-- 阈值设置为 20 毫米 -->
+  </node>
+
+  <!-- 启动障碍物发布节点 -->
+  <node name="obstacle_publisher" pkg="lightrover_navigation" type="obstacle_publisher.py" output="screen"/>
+
+
+
+  <!-- 启动机器人底层控制节点 -->
+  <!-- 假设您的机器人底层控制节点订阅 /edge_cmd_vel，您需要在此处启动或确保其已启动 -->
+</launch>
+

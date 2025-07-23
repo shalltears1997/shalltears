@@ -1,0 +1,1 @@
+/home/niitsuma/catkin_ws/devel/.private/ros_master_test/lib/python3/dist-packages/ros_master_test/srv/_Wrc201Msg.py

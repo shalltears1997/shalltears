@@ -1,0 +1,1 @@
+/home/niitsuma/catkin_ws/devel/.private/ros_master_test/share/roseus/ros/ros_master_test/manifest.l

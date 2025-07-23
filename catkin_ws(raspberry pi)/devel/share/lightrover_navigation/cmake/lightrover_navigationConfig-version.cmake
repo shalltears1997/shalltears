@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/lightrover_navigation/share/lightrover_navigation/cmake/lightrover_navigationConfig-version.cmake

@@ -1,0 +1,75 @@
+<launch>
+  <!-- Republish color (compressed->raw) -->
+  <node pkg="image_transport" type="republish" name="color_repub"
+        args="compressed in:=/camera/color/image_raw raw out:=/camera/color/image_raw_uncompressed"/>
+
+
+  <node pkg="my_realsense_demo"
+        type="aligned_depth_publisher.py"
+        name="depth_align_node"
+        output="screen" />
+
+
+  <!-- Python node to do face detection/recognition + depth reading -->
+  <node pkg="my_realsense_demo"
+        type="yunet_face_recognizer_test_depth.py"
+        name="face_recognizer_node"
+        output="screen"
+        args="kaku" />
+
+  <node pkg="my_realsense_demo"
+        type="face_track_filter_node.py"
+        name="face_filter_node"
+        output="screen" />
+
+
+  <!-- 启动 face_localization_node -->
+  <node pkg="my_realsense_demo"
+        type="face_localization_node.py"
+        name="face_localization_node"
+        output="screen">
+    <!-- 设置参数 -->
+    <param name="camera_fov_deg"  value="70.4" />
+    <param name="image_width"     value="640" />
+    <param name="robot_yaw_deg"   value="0.0" />
+  </node>
+
+
+
+
+  <node pkg="my_realsense_demo"
+        type="face_position_transformer.py"
+        name="face_position_transformer"
+        output="screen" />
+
+
+  <node pkg="my_realsense_demo"
+        type="osr_pose_publisher.py"
+        name="osr_pose_publisher"
+        output="screen">
+    <!-- 这里若需要，可以加param -->
+  </node>
+
+  <!-- 3) 新增：my_ethoengine_connector.py (订阅 /osr_pose, 发到 EthoEngine) -->
+  <node pkg="my_realsense_demo"
+        type="my_ethoengine_connector.py"
+        name="my_ethoengine_connector"
+        output="screen">
+
+  </node>
+
+  <node pkg="my_realsense_demo"
+        type="etho_output.py"
+        name="etho_output_node"
+        output="screen">
+    <!-- 没有额外参数，若需要可在此加 <param> -->
+  </node>
+
+
+
+  <!-- 仅仅为了调试，在终端中 echo /face_positions -->
+  <!--<node pkg="rostopic" type="rostopic" name="echo_face_positions"
+        args="echo /face_positions" output="screen"/>-->
+
+
+</launch>

@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/lightrover_ros/share/gennodejs/ros/lightrover_ros/srv/Wrc201Msg.js

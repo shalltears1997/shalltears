@@ -1,0 +1,7 @@
+Linked: (/home/niitsuma/catkin_ws/devel/.private/my_realsense_demo/share/my_realsense_demo/cmake/my_realsense_demoConfig.cmake, /home/niitsuma/catkin_ws/devel/share/my_realsense_demo/cmake/my_realsense_demoConfig.cmake)
+Linked: (/home/niitsuma/catkin_ws/devel/.private/my_realsense_demo/share/my_realsense_demo/cmake/my_realsense_demoConfig-version.cmake, /home/niitsuma/catkin_ws/devel/share/my_realsense_demo/cmake/my_realsense_demoConfig-version.cmake)
+Linked: (/home/niitsuma/catkin_ws/devel/.private/my_realsense_demo/lib/my_realsense_demo/cmake.lock, /home/niitsuma/catkin_ws/devel/lib/my_realsense_demo/cmake.lock)
+Symlinking /home/niitsuma/catkin_ws/devel/lib/my_realsense_demo/face_recognizer_no_yunet.py
+Linked: (/home/niitsuma/catkin_ws/devel/.private/my_realsense_demo/lib/my_realsense_demo/face_recognizer_ros.py, /home/niitsuma/catkin_ws/devel/lib/my_realsense_demo/face_recognizer_ros.py)
+Linked: (/home/niitsuma/catkin_ws/devel/.private/my_realsense_demo/lib/my_realsense_demo/face_recognizer_republish.py, /home/niitsuma/catkin_ws/devel/lib/my_realsense_demo/face_recognizer_republish.py)
+Linked: (/home/niitsuma/catkin_ws/devel/.private/my_realsense_demo/lib/pkgconfig/my_realsense_demo.pc, /home/niitsuma/catkin_ws/devel/lib/pkgconfig/my_realsense_demo.pc)

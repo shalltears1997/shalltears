@@ -1,0 +1,44 @@
+<launch>
+  <!-- 
+    ekf_fusion.launch
+    启动:
+      1) grove_imu_node.py (LSM6DS3)
+      2) pos_controller / odometry (如另一个launch包括的话，也可 include)
+      3) ekf_localization_node
+         并将输出的话题改为 /odometryEFK
+  -->
+
+  <!-- (可选) 启动 IMU 驱动节点 -->
+  <node pkg="lightrover_navigation"
+        type="grove_imu_node.py"
+        name="grove_imu"
+        output="screen">
+    <!-- grove_imu_node.py 内部会选通 channel3 => i2c=0x6A => LSM6DS3 -->
+  </node>
+
+  <!-- (可选) 启动 pos_controller / odometry 
+       如果你已有专门的launch,可 <include file="..." /> 
+       或者写在别处. 
+       这里暂时不写重复. -->
+
+  <!-- 启动 ekf_localization_node -->
+  <node pkg="robot_localization"
+        type="ekf_localization_node"
+        name="ekf_localization"
+        output="screen">
+
+    <!-- 加载 ekf.yaml 主要配置 -->
+    <rosparam command="load"
+              file="$(find lightrover_navigation)/config/ekf.yaml" />
+
+    <!-- 
+      这里是重点:
+      指定 "odom_topic" 参数 => "/odometryEFK"
+      让 EKF最终输出变成 /odometryEFK (nav_msgs/Odometry)
+    -->
+    <param name="odom_topic" value="/odometryEFK" />
+    
+    <!-- (可选) 你也可指定 other params, e.g. "publish_tf" or "map_frame" here. -->
+  </node>
+</launch>
+

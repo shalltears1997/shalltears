@@ -1,0 +1,33 @@
+<launch>
+  <!-- 1) 启动 VL53L0X 传感器数据发布节点 -->
+  <node name="vl53l0x_publisher"
+        pkg="lightrover_navigation"
+        type="vl53l0x_publisher.py"
+        output="screen" />
+
+  <!-- 2) 启动边缘检测节点 (发布 /edge_detected(Bool) & /edge_detected_sensor(String)) -->
+  <node name="edge_detector"
+        pkg="lightrover_navigation"
+        type="edge_detector.py"
+        output="screen">
+    <param name="distance_threshold" value="25"/>
+  </node>
+
+  <!-- 3) 启动 双话题发布节点 (接收 /edge_detected_sensor(String)，发布 /edge_obstacle_polygon & /edge_obstacle_cloud) -->
+  <node name="edge_obstacle_dual_publisher"
+        pkg="lightrover_navigation"
+        type="edge_obstacle_dual_publisher.py"
+        output="screen" />
+
+  <!-- 4) 启动安全控制节点 (订阅 /edge_detected(Bool)，在检测时切换 mux 并发布 /safety_cmd_vel) -->
+  <node name="safety_controller"
+        pkg="lightrover_navigation"
+        type="safety_controller_node.py"
+        output="screen" />
+
+  <!-- 5) 启动 mux 节点 (topic_tools)，将 /nav_cmd_vel & /safety_cmd_vel 重定向到 /rover_drive -->
+  <node pkg="topic_tools" type="mux" name="mux" output="screen"
+        args="/rover_drive /nav_cmd_vel /safety_cmd_vel" />
+
+</launch>
+

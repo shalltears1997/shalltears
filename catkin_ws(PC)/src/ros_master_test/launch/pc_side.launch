@@ -1,0 +1,23 @@
+<launch>
+
+
+  <!-- teleop_twist_keyboard -->
+  <node pkg="teleop_twist_keyboard"
+        type="teleop_twist_keyboard.py"
+        name="teleop_key"
+        output="screen">
+    <!-- 重映射：将 node 内部的 “cmd_vel” 话题改为 “/rover_drive” -->
+    <remap from="cmd_vel" to="/rover_drive"/>
+  </node>
+
+  <!-- 2) (可选) rosbag 记录
+       将 /odom /odometryWithIMU /imu/data_raw /tf /cmd_vel 都录下来
+       文件名 => compare_imu.bag
+  -->
+  <node pkg="rosbag"
+        type="record"
+        name="bag_recorder"
+        output="screen"
+        args="-O compare_imu.bag /odom /odometryWithIMU /imu/data_raw /tf /rover_drive" />
+</launch>
+

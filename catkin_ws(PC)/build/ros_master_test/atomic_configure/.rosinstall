@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/niitsuma/catkin_ws/devel/.private/ros_master_test/setup.sh

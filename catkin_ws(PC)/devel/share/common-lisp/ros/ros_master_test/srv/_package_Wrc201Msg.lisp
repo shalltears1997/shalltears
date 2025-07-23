@@ -1,0 +1,1 @@
+/home/niitsuma/catkin_ws/devel/.private/ros_master_test/share/common-lisp/ros/ros_master_test/srv/_package_Wrc201Msg.lisp

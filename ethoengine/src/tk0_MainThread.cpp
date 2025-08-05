@@ -493,8 +493,7 @@ void MainThread()
 				data.pa_human[0].dexpP = 0;
 				data.pa_human[0].dexpM = 0;
 
-				data.pa_human[0].dmisP = parm.dMissP(data.robot.posi, own, data.pa_human[0].ata, false)
-																	+ parm.dMiss_Door(data.robot.posi, own);
+
 				data.pa_human[0].dmisM = parm.dMissM(data.robot.posi, own, data.pa_human[0].ata, false);
 
 				// stranger

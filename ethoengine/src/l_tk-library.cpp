@@ -331,7 +331,7 @@ Position adjust_point(Position place)
 //	int region_xXyY[4] = {-2500, 2500, 500, 2500}; //現実的（実験）
 //	int region_xXyY[4] = {-3000, 0, 600, 2000};
 
-	int region_xXyY[4] = {-750, 750, 750, 2250};
+	int region_xXyY[4] = {-1000, 1000, 500, 2500};
 
 	if(place.posex < region_xXyY[0]) place.posex = region_xXyY[0];
 	if(place.posex > region_xXyY[1]) place.posex = region_xXyY[1];
@@ -345,7 +345,7 @@ Position adjust_point(Position place)
 
 DATA_xy adjust_point(DATA_xy place)
 {
-	int region_xXyY[4] = {-750, 750, 750, 2250};
+	int region_xXyY[4] = {-1000, 1000, 500, 2500};
 	if(place.x < region_xXyY[0]) place.x = region_xXyY[0];
 	if(place.x > region_xXyY[1]) place.x = region_xXyY[1];
 	if(place.y < region_xXyY[2]) place.y = region_xXyY[2];
@@ -360,7 +360,7 @@ Position adjust_point_new(DATA_grid place)
 //	int region_xXyY[4] = {-2500, 2500, 500, 2500}; //現実的（実験）
 //	int region_xXyY[4] = {-3000, 0, 600, 2000};
 
-	int region_xXyY[4] = {-750, 750, 750, 2250};
+	int region_xXyY[4] = {-1000, 1000, 500, 2500};
 
 	double x = grid2double_x(place.i);
 	double y = grid2double_y(place.j);

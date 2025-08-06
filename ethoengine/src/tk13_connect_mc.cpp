@@ -126,7 +126,7 @@ void connectWithMCClass::connectLoop()
     while (thread_continue_flag)
     {
       std::this_thread::sleep_for(std::chrono::milliseconds(100));
-      //if (sendData()    == -1) break;
+     // if (sendData()    == -1) break;
       if (receiveData() == -1) break;
     }
 

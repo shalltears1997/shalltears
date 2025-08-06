@@ -5,6 +5,11 @@
 #include "tk_data_class.hpp"
 #include "tk_Parameter.hpp"
 
+inline bool insideTable(double x_mm, double y_mm)
+{
+    return (x_mm >= -1000 && x_mm <= 1000   // X ∈ [-1000,1000]
+         && y_mm >=   500 && y_mm <= 2500); // Y ∈ [  500,2500]
+}
 
 double calcParmClass::adjust_delta(double value, double delta)
 {
@@ -316,14 +321,19 @@ std::vector<std::vector<double>> calcParmClass::NextExplorePerPlace(DATA_xy robo
   std::vector<std::vector<double>> tmp_unknown_area(data.unknown_area);  // コピーコンストラクタ
 
   // 時間経過による未知度増加
-  for(int i=0; i<area1; i++)
-  {
-  	for(int j=0; j<area2; j++)
-  	{
-  		tmp_unknown_area[i][j] += 0.05 * (1 - sensitivity/100);
-  		if(tmp_unknown_area[i][j] > 100*10) tmp_unknown_area[i][j] = 100*10;
-  	}
+for(int i=0; i<area1; i++){
+  for(int j=0; j<area2; j++){
+      // 粗格坐标 → 毫米座標
+      double cx = i*1000 - WIDTH_ETHO/2  + 500;  // 每格 1000 mm，取中心
+      double cy = HEIGHT_ETHO - j*1000   - 500;
+
+      if( insideTable(cx, cy) ){
+          tmp_unknown_area[i][j] += 0.05 * (1 - sensitivity/100);
+          if(tmp_unknown_area[i][j] > 100*10) tmp_unknown_area[i][j] = 100*10;
+      }
   }
+}
+
   // ロボットのいる領域の未知度減少
   if(exist_judge_robot(robot))
   {
@@ -434,8 +444,12 @@ double calcParmClass::NextExplorePlace(std::vector<std::vector<double>> unknown_
             for(int j=0; j<gridnum2; j++)
             {
               // 加算
-              (*unknown_area_in)[i][j] += increment * (1 - sensitivity/100);
-              if((*unknown_area_in)[i][j] > 100*10) (*unknown_area_in)[i][j] = 100*10;
+              double cx = grid2double_x(i); 
+              double cy = grid2double_y(j);
+              if( insideTable(cx, cy) ){
+              		(*unknown_area_in)[i][j] += increment * 2;
+              		if((*unknown_area_in)[i][j] > 100*10) (*unknown_area_in)[i][j] = 100*10;
+              				}
               // 減算
               double distance = calDistance((DATA_xy){grid2double_x(i), grid2double_y(j)}, robot);
               if(distance < diameter/2)

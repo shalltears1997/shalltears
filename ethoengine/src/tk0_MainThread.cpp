@@ -493,7 +493,8 @@ void MainThread()
 				data.pa_human[0].dexpP = 0;
 				data.pa_human[0].dexpM = 0;
 
-
+				data.pa_human[0].dmisP = parm.dMissP(data.robot.posi, own, data.pa_human[0].ata, false);
+																	+ parm.dMiss_Door(data.robot.posi, own);
 				data.pa_human[0].dmisM = parm.dMissM(data.robot.posi, own, data.pa_human[0].ata, false);
 
 				// stranger
@@ -823,14 +824,14 @@ void MainThread()
           {
           	std::random_device rd;
           	std::mt19937 mt(rd());
-          	std::uniform_real_distribution<double> score(-750, 750);
-          	data.tmp_goal.x = score(mt);   // X は‑750〜750
+          	std::uniform_real_distribution<double> score(-1000, 1000);
+          	data.tmp_goal.x = score(mt);   // X は-1000〜1000
           }
 
           {
             std::random_device rd;
             std::mt19937 mt(rd());
-            std::uniform_real_distribution<double> score(-750, 750);
+            std::uniform_real_distribution<double> score(500, 2500);
             data.tmp_goal.y = score(mt);   // Y も一旦乱数
             data.tmp_goal   = adjust_point(data.tmp_goal);
           }

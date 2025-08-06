@@ -273,10 +273,10 @@ void myDisplay(void)
         glColor3d(1.0, 0.0, 0.0);   // 红色边框
         glLineWidth(5.0);           // 较粗
         glBegin(GL_LINE_LOOP);
-            glVertex2d(-750, 2250); // 左上
-            glVertex2d( 750, 2250); // 右上
-            glVertex2d( 750,  750); // 右下
-            glVertex2d(-750,  750); // 左下
+            glVertex2d(-1000, 2500); // 左上
+            glVertex2d( 1000, 2500); // 右上
+            glVertex2d( 1000,  500); // 右下
+            glVertex2d(-1000,  500); // 左下
         glEnd();
         glLineWidth(1.0);  
 

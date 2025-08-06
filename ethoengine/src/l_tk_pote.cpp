@@ -50,7 +50,7 @@ double PotentialFunction::calBarrier(double x, double y, double approach_distanc
 // アタッチメントと接近距離の関係
 double PotentialFunction::attachment2distance(int attachment)
 {
-	double d_max = 1250, d_min = 750;
+	double d_max = 1200, d_min = 240;
 	int a_max = 100;
 	double distance = (double)(a_max - attachment)/a_max * (d_max - d_min) + d_min;
 	return distance/1000;

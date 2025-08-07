@@ -20,7 +20,7 @@
     <HARK_connect>0</HARK_connect>
 
     <!-- 0: Robot simulator, 1: Real Robot?, 2: No robot - just display? -->
-    <ROBOT>2</ROBOT>
+    <ROBOT>1</ROBOT>
 
     <!-- 0: do not send data to Observer (SST), 1: send position data to Observer (SST) -->
     <Observer_connect>0</Observer_connect>

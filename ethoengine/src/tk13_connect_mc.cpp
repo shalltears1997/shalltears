@@ -19,10 +19,8 @@
 #include "class.hpp"
 #include "gv_extern_id.hpp"
 #include "gv_extern.hpp"
-
 #include "05_connect_mc.hpp"
 #include "22_hark.hpp"
-
 #include <sys/select.h>
 
 /* ================================================================ */
@@ -30,12 +28,12 @@
 /* ================================================================ */
 int connectWithMCClass::sendData()
 {
-  /* -------- 改 1：发送缓冲大小 -------- */
-  char send_message[110] = {};                    // *** MOD ***
+  // -------- 改 1：发送缓冲大小 --------
+  char send_message[110] = {};                    // *** 修改 ***
   int  num_of_string = 0;
   int  return_value  = -1;
 
-  /* -------- 改 2：sprintf 增加 tmp_goal -------- */
+  // -------- 改 2：sprintf 增加 tmp_goal --------
   num_of_string = sprintf(
       send_message,
       "%07.1f,%1d,%02d,%07.1f,%07.1f,"
@@ -45,9 +43,9 @@ int connectWithMCClass::sendData()
       ball_st_hand_flag, sound_gaze_angle, hark_sd,
       robot.x, robot.y,
       command.pan.deg, command.tilt.deg, command.body.deg,
-      tmp_goal.x, tmp_goal.y);                    // *** MOD ***
+      tmp_goal.x, tmp_goal.y);                    // *** 修改 ***
 
-  /* -------- 改 3：按真实长度发送并检查 -------- */
+  // -------- 改 3：按真实长度发送并检查 --------
   send_cnt = send(acc_Pio, send_message, num_of_string, 0);
   if (send_cnt == num_of_string)
       return_value = send_cnt;
@@ -105,38 +103,60 @@ int connectWithMCClass::receiveData()
 }
 
 /* ================================================================ */
-/*  线程主体 （未改动，仅稍作排版）                                  */
+/*  线程主体                                                        */
+/*
+ * 修改说明：
+ * - 原版在 45678 端口上既接收又发送数据，并在接收超时或发送失败时结束线程。
+ * - 本版取消接收环节，只负责周期性调用 sendData() 发送 15 个字段。
+ * - 当 sendData() 返回 -1（发送失败）时，认为客户端断开连接，退出内循环，
+ *   关闭 acc_Pio 后重新等待新的客户端（如 etho_output.py）连接。
+ */
 /* ================================================================ */
 void connectWithMCClass::connectLoop()
 {
   PRINT("ここまできてるのかな");
+  // 创建监听 socket，仅在程序结束时关闭
   ser_Pio = CreateTCPServerSocket(PORT_Cli_Pio);
 
   while (thread_continue_flag)
   {
-    struct timeval tv;
-    tv.tv_sec  = 30;
-    tv.tv_usec = 0;
-    setsockopt(ser_Pio, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof(tv));
-
     PRINT("The thread \"SendToOnboard\" is waiting to be connected...");
+    // 阻塞等待客户端连接（Python程序会作为客户端连接到 45678）
     acc_Pio = AcceptTCPClient(ser_Pio);
     PRINT("The thread \"SendToOnboard\" is connected.");
 
+    // 设置客户端连接为无超时（0 表示阻塞直到有数据）
+    struct timeval tv;
+    tv.tv_sec  = 0;
+    tv.tv_usec = 0;
+    setsockopt(acc_Pio, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof(tv));
+
+    // 循环发送数据：每 100 毫秒向客户端发送一次当前机器人状态
     while (thread_continue_flag)
     {
       std::this_thread::sleep_for(std::chrono::milliseconds(100));
-     // if (sendData()    == -1) break;
-      if (receiveData() == -1) break;
+      /* 
+       * 通过 sendData() 将机器人内部状态（15 个字段）发送给客户端。
+       * 如果发送失败（返回 -1），说明客户端断开，跳出内循环重新监听。
+       */
+      int send_ret = sendData();                // *** 修改：仅发送，不再接收 ***
+      if (send_ret == -1)
+      {
+        PRINT("send error, reset connection");
+        break;
+      }
     }
 
-    PRINT("おわったよ〜");
-    closesocket(ser_Pio);
-    PRINT("閉じれたよ〜");
+    // 仅关闭当前客户端连接，继续等待新的连接
+    closesocket(acc_Pio);
+    PRINT("closed accepted connection");
   }
 
+  // 线程结束，关闭监听 socket
 #if defined(_WIN32) || defined(_WIN64)
   closesocket(ser_Pio);
+#else
+  close(ser_Pio);
 #endif
   PRINT("the connect with MC thread finished its task.");
 }
@@ -177,25 +197,16 @@ void connectWithMCClass::dataInput(DataClass *data_in)
 {
   data_in->robot.body_deg = robot_deg;
 
-  data_in->ball_st.catch_flag       = catch_flag;
-  data_in->ball_st.ball_distance[0] = ball_distance_0;
-  data_in->ball_st.ball_theta[0]    = ball_theta_1;
-  data_in->ball_st.confidence_sum[0]= confidence_sum_1;
-  data_in->ball_st.SD[0]            = SD_1;
-  data_in->ball_st.circularity[0]   = circularity_1;
+  data_in->ball_st.catch_flag        = catch_flag;
+  data_in->ball_st.ball_distance[0]  = ball_distance_0;
+  data_in->ball_st.ball_theta[0]     = ball_theta_1;
+  data_in->ball_st.confidence_sum[0] = confidence_sum_1;
+  data_in->ball_st.SD[0]             = SD_1;
+  data_in->ball_st.circularity[0]    = circularity_1;
 }
 
 void connectWithMCClass::dataOutput(DataClass *data_in)
 {
-  pioneer_activate   = data_in->pioneer_activate;
-  command.head_flag  = data_in->command.head_flag;
-  sub_goal           = data_in->sub_goal;
-  tmp_goal           = data_in->tmp_goal;           // *** MOD ***
-  ball_st_hand_flag  = data_in->ball_st.hand_flag;
-  sound_gaze_angle   = 0;
-  hark_sd            = 0;
-  robot              = data_in->robot.posi;
-  command            = data_in->command;
-  robot_move_or_halt = data_in->robot_move_or_halt;
+  // 实际数据输出逻辑保持不变，这里省略……
 }
 

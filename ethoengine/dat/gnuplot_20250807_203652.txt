@@ -1,0 +1,18 @@
+
+arning: empty z range [0:0], adjusting to [-1:1]
+Warning: empty cb range [0:0], adjusting to [-1:1]
+Warning: empty z range [0:0], adjusting to [-1:1]
+Warning: empty cb range [0:0], adjusting to [-1:1]
+Warning: empty z range [0:0], adjusting to [-1:1]
+Warning: empty cb range [0:0], adjusting to [-1:1]
+Warning: empty z range [0:0], adjusting to [-1:1]
+Warning: empty cb range [0:0], adjusting to [-1:1]
+Warning: empty z range [0:0], adjusting to [-1:1]
+Warning: empty cb range [0:0], adjusting to [-1:1]
+Warning: empty z range [0:0], adjusting to [-1:1]
+Warning: empty cb range [0:0], adjusting to [-1:1]
+Warning: empty z range [0:0], adjusting to [-1:1]
+Warning: empty cb range [0:0], adjusting to [-1:1]
+Warning: empty z range [0:0], adjusting to [-1:1]
+Warning: empty cb range [0:0], adjusting to [-1:1]
+

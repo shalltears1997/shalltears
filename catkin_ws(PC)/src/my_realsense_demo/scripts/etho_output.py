@@ -21,7 +21,7 @@ pose_msg.header.frame_id = "map"
 pose_msg.pose.orientation = Quaternion(0, 0, 0, 1)
 
 buffer = b""
-rate   = rospy.Rate(5)        # *** MOD *** 5 Hz 发布
+rate   = rospy.Rate(1)        # *** MOD *** 5 Hz 发布
 
 def extract_one_message(buf: bytes):
     """从累计缓冲里取出一个完整逗号串（15 个字段）"""
@@ -62,8 +62,8 @@ try:
             continue
 
         # 坐标系转换
-        global_x = tgx
-        global_y = tgy - Y_OFFSET
+        global_x = tgx / 1000
+        global_y = (tgy - Y_OFFSET) / 1000
 
         # 发布
         pose_msg.header.stamp = rospy.Time.now()
@@ -72,6 +72,8 @@ try:
         rospy.loginfo(f"Goal -> x:{global_x:.1f}  y:{global_y:.1f}")
 
         rate.sleep()
+
+
 
 except (socket.error, ConnectionError) as e:
     rospy.logerr("Socket error: %s", e)

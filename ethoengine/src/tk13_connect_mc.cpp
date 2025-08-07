@@ -207,6 +207,15 @@ void connectWithMCClass::dataInput(DataClass *data_in)
 
 void connectWithMCClass::dataOutput(DataClass *data_in)
 {
-  // 实际数据输出逻辑保持不变，这里省略……
+  pioneer_activate   = data_in->pioneer_activate;
+  command.head_flag  = data_in->command.head_flag;
+  sub_goal           = data_in->sub_goal;
+  tmp_goal           = data_in->tmp_goal;           // *** MOD ***
+  ball_st_hand_flag  = data_in->ball_st.hand_flag;
+  sound_gaze_angle   = 0;
+  hark_sd            = 0;
+  robot              = data_in->robot.posi;
+  command            = data_in->command;
+  robot_move_or_halt = data_in->robot_move_or_halt;
 }
 

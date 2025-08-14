@@ -29,15 +29,14 @@
 int connectWithMCClass::sendData()
 {
   // -------- 改 1：发送缓冲大小 --------
-  char send_message[110] = {};                    // *** 修改 ***
+  char send_message[256] = {};                    // *** 修改 ***
   int  num_of_string = 0;
   int  return_value  = -1;
 
   // -------- 改 2：sprintf 增加 tmp_goal --------
   num_of_string = sprintf(
       send_message,
-      "%07.1f,%1d,%02d,%07.1f,%07.1f,"
-      "%2d,%07.2f,%07.2f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f",
+      "%07.1f,%1d,%02d,%07.1f,%07.1f,%2d,%07.2f,%07.2f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f\n",
       sound_flag, robot_move_or_halt, command.head_flag,
       sub_goal.x, sub_goal.y,
       ball_st_hand_flag, sound_gaze_angle, hark_sd,

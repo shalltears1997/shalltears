@@ -241,7 +241,7 @@ void MainThread()
 
 		// シミュレータのときは指定時間ごとに、実機のときはロボットの位置がZPSによって更新されたとき(約100ms間隔)に実行
     // if( (ROBOT==2 && time_interval > simRefreshRatio_clock) || (ROBOT==1 && data.zps_robot_new) )
-		if( (ROBOT==2 && time_duration*10 > data.loop_num+1) || (ROBOT==1 && data.zps_robot_new) )
+		if( (ROBOT==2 && time_duration*10 > data.loop_num+1) || (ROBOT==1) )
 		{
 			time_last = time_now;
 			data.loop_num++;

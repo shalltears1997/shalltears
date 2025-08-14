@@ -61,9 +61,9 @@
   <node pkg="my_realsense_demo"
         type="etho_output.py"
         name="etho_output_node"
-        output="screen">
+        output="screen"> 
     <!-- 没有额外参数，若需要可在此加 <param> -->
-  </node>
+  </node>  
 
 
 

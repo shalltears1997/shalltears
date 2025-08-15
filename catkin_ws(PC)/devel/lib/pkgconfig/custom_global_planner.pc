@@ -1,0 +1,1 @@
+/home/niitsuma/catkin_ws/devel/.private/custom_global_planner/lib/pkgconfig/custom_global_planner.pc

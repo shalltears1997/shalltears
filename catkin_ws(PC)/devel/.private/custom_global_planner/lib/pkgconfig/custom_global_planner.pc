@@ -1,0 +1,8 @@
+prefix=/home/niitsuma/catkin_ws/devel/.private/custom_global_planner
+
+Name: custom_global_planner
+Description: Description of custom_global_planner
+Version: 0.0.1
+Cflags: -I/home/niitsuma/catkin_ws/src/custom_global_planner/include
+Libs: -L${prefix}/lib -lcustom_global_planner
+Requires: costmap_2d geometry_msgs nav_core nav_msgs pluginlib roscpp tf2_ros

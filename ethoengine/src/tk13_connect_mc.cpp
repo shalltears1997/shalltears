@@ -1,5 +1,5 @@
 /********************************************************************
- *  tk13_connect_mc.cpp  ——  完整版（包含 tmp_goal 扩展）
+ *  tk13_connect_mc.cpp  ——  完整版（包含 tmp_goal 扩展和路径发送）
  *******************************************************************/
 #include <iostream>
 #include <cstring>
@@ -20,7 +20,7 @@
 #include "gv_extern_id.hpp"
 #include "gv_extern.hpp"
 #include "05_connect_mc.hpp"
-#include "22_hark.hpp"
+  #include "22_hark.hpp"
 #include <sys/select.h>
 
 /* ================================================================ */
@@ -28,21 +28,34 @@
 /* ================================================================ */
 int connectWithMCClass::sendData()
 {
-  // -------- 改 1：发送缓冲大小 --------
-  char send_message[256] = {};                    // *** 修改 ***
+  // -------- 改 1：扩大缓冲区以容纳完整路径 --------
+  char send_message[4096] = {};                   // *** 修改 ***
   int  num_of_string = 0;
   int  return_value  = -1;
 
   // -------- 改 2：sprintf 增加 tmp_goal --------
   num_of_string = sprintf(
       send_message,
-      "%07.1f,%1d,%02d,%07.1f,%07.1f,%2d,%07.2f,%07.2f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f\n",
+      "%07.1f,%1d,%02d,%07.1f,%07.1f,%2d,%07.2f,%07.2f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f,%07.1f",
       sound_flag, robot_move_or_halt, command.head_flag,
       sub_goal.x, sub_goal.y,
       ball_st_hand_flag, sound_gaze_angle, hark_sd,
       robot.x, robot.y,
       command.pan.deg, command.tilt.deg, command.body.deg,
       tmp_goal.x, tmp_goal.y);                    // *** 修改 ***
+
+  // -------- 新增：追加整条路径 command.robot.path --------
+  if (!command.robot.path.empty())
+  {
+    send_message[num_of_string++] = ';';
+    for (const auto &pt : command.robot.path)
+    {
+      int n = sprintf(send_message + num_of_string, "%07.1f,%07.1f;", pt.x, pt.y);
+      num_of_string += n;
+    }
+  }
+  send_message[num_of_string++] = '\n';
+  send_message[num_of_string]   = '\0';
 
   // -------- 改 3：按真实长度发送并检查 --------
   send_cnt = send(acc_Pio, send_message, num_of_string, 0);
@@ -103,42 +116,27 @@ int connectWithMCClass::receiveData()
 
 /* ================================================================ */
 /*  线程主体                                                        */
-/*
- * 修改说明：
- * - 原版在 45678 端口上既接收又发送数据，并在接收超时或发送失败时结束线程。
- * - 本版取消接收环节，只负责周期性调用 sendData() 发送 15 个字段。
- * - 当 sendData() 返回 -1（发送失败）时，认为客户端断开连接，退出内循环，
- *   关闭 acc_Pio 后重新等待新的客户端（如 etho_output.py）连接。
- */
 /* ================================================================ */
 void connectWithMCClass::connectLoop()
 {
   PRINT("ここまできてるのかな");
-  // 创建监听 socket，仅在程序结束时关闭
   ser_Pio = CreateTCPServerSocket(PORT_Cli_Pio);
 
   while (thread_continue_flag)
   {
     PRINT("The thread \"SendToOnboard\" is waiting to be connected...");
-    // 阻塞等待客户端连接（Python程序会作为客户端连接到 45678）
     acc_Pio = AcceptTCPClient(ser_Pio);
     PRINT("The thread \"SendToOnboard\" is connected.");
 
-    // 设置客户端连接为无超时（0 表示阻塞直到有数据）
     struct timeval tv;
     tv.tv_sec  = 0;
     tv.tv_usec = 0;
     setsockopt(acc_Pio, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof(tv));
 
-    // 循环发送数据：每 100 毫秒向客户端发送一次当前机器人状态
     while (thread_continue_flag)
     {
       std::this_thread::sleep_for(std::chrono::milliseconds(100));
-      /* 
-       * 通过 sendData() 将机器人内部状态（15 个字段）发送给客户端。
-       * 如果发送失败（返回 -1），说明客户端断开，跳出内循环重新监听。
-       */
-      int send_ret = sendData();                // *** 修改：仅发送，不再接收 ***
+      int send_ret = sendData();
       if (send_ret == -1)
       {
         PRINT("send error, reset connection");
@@ -146,12 +144,10 @@ void connectWithMCClass::connectLoop()
       }
     }
 
-    // 仅关闭当前客户端连接，继续等待新的连接
     closesocket(acc_Pio);
     PRINT("closed accepted connection");
   }
 
-  // 线程结束，关闭监听 socket
 #if defined(_WIN32) || defined(_WIN64)
   closesocket(ser_Pio);
 #else
@@ -161,7 +157,7 @@ void connectWithMCClass::connectLoop()
 }
 
 /* ================================================================ */
-/*  线程控制函数——保持原实现                                          */
+/*  线程控制函数                                                     */
 /* ================================================================ */
 void connectWithMCClass::connectLoopThreadBegin(bool *is_new)
 {
@@ -169,7 +165,8 @@ void connectWithMCClass::connectLoopThreadBegin(bool *is_new)
   this->is_new = is_new;
 }
 
-void connectWithMCClass::connectLoopThreadFinish()
+/* ★★★ 修复作用域：带类限定符 ★★★ */
+void connectWithMCClass::connectLoopThreadFinish()     // *** 修改：添加类作用域 ***
 {
   if (thread_1 == nullptr)
   {
@@ -209,7 +206,7 @@ void connectWithMCClass::dataOutput(DataClass *data_in)
   pioneer_activate   = data_in->pioneer_activate;
   command.head_flag  = data_in->command.head_flag;
   sub_goal           = data_in->sub_goal;
-  tmp_goal           = data_in->tmp_goal;           // *** MOD ***
+  tmp_goal           = data_in->tmp_goal;           // *** 修改：复制 tmp_goal ***
   ball_st_hand_flag  = data_in->ball_st.hand_flag;
   sound_gaze_angle   = 0;
   hark_sd            = 0;

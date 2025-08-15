@@ -1,0 +1,4 @@
+Symlinking /home/niitsuma/catkin_ws/devel/share/custom_global_planner/cmake/custom_global_plannerConfig-version.cmake
+Symlinking /home/niitsuma/catkin_ws/devel/share/custom_global_planner/cmake/custom_global_plannerConfig.cmake
+Symlinking /home/niitsuma/catkin_ws/devel/lib/libcustom_global_planner.so
+Symlinking /home/niitsuma/catkin_ws/devel/lib/pkgconfig/custom_global_planner.pc

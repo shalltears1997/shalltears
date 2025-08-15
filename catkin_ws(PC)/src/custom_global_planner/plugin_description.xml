@@ -1,0 +1,9 @@
+<library path="lib/libcustom_global_planner">
+  <class name="custom_global_planner/CustomPathPlanner"
+         type="custom_global_planner::CustomPathPlanner"
+         base_class_type="nav_core::BaseGlobalPlanner">
+    <description>
+      Custom global planner that outputs a cached nav_msgs/Path from /custom_global_path.
+    </description>
+  </class>
+</library>

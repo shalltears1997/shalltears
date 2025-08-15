@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>custom_global_planner</name>
+  <version>0.0.1</version>
+  <description>Custom global planner that uses /custom_global_path</description>
+
+  <maintainer email="niitsuma@todo.todo">niitsuma</maintainer>
+  <license>MIT</license>
+
+  <!-- buildtool -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- build dependencies -->
+  <build_depend>costmap_2d</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_core</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf2_ros</build_depend>
+
+  <!-- exec dependencies -->
+  <exec_depend>costmap_2d</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_core</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+
+  <!-- ★修改点：用 nav_core 导出插件 -->
+  <export>
+    <nav_core plugin="${prefix}/plugin_description.xml"/>  <!-- ★修改：注册为 nav_core 插件 -->
+  </export>
+</package>
+

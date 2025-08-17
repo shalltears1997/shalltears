@@ -35,11 +35,11 @@ DWAPlannerROS:
 #  path_distance_bias: 72.0
 #  goal_distance_bias: 28.0
   occdist_scale: 0.5
-  forward_point_distance: 0.1
+  forward_point_distance: 0.3
   scaling_speed: 0.25
   max_scaling_factor: 0.2
 
-  oscillation_reset_dist: 0.05
+  oscillation_reset_dist: 0.03
 
   publish_traj_pc: true
   publish_cost_grid_pc: true

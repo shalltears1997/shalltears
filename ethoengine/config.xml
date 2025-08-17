@@ -5,7 +5,7 @@
 
 <connection>
     <!-- position of Robot - 1: from Unity? -->
-    <poR>0</poR>
+    <poR>1</poR>
 
     <!-- position of Owner - 1: from ZonePositioningSystem -->
     <poO>1</poO>

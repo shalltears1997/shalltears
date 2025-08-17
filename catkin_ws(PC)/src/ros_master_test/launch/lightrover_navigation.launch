@@ -6,7 +6,7 @@
   <!--<node pkg="ros_master_test" type="odometry.py" name="rover_odometry" />-->
   <!-- mapサーバー -->
   <!--マップファイルのパスの指定 -->
-  <arg name="map_file" default="$(find ros_master_test)/map/test1.8.yaml"/>
+  <arg name="map_file" default="$(find ros_master_test)/map/test10.yaml"/>
 
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
@@ -20,7 +20,7 @@
     <param name="gui_publish_rate" value="5.0"/>
     <param name="odom_model_type" value="diff"/>
     <param name="min_particles" value="100"/>
-    <param name="max_particles" value="500"/>
+    <param name="max_particles" value="300"/>
     <!--<param name="kld_err" value="0.05"/>-->
     <param name="kld_err" value="0.02"/>
     <param name="kld_z" value="0.99"/>
@@ -29,7 +29,7 @@
     <param name="odom_alpha2" value="0.8"/>
     <param name="odom_alpha3" value="0.7"/>
     <param name="odom_alpha4" value="0.8"/>
-    <param name="laser_max_beams" value="180"/>
+    <param name="laser_max_beams" value="120"/>
     <param name="laser_z_hit" value="0.7"/>
     <param name="laser_z_short" value="0.05"/>
     <param name="laser_z_max" value="0.05"/>
@@ -42,11 +42,11 @@
     <param name="laser_likelihood_max_dist" value="2.5"/>
     <param name="update_min_d" value="0.05"/>
     <!-- <param name="update_min_a" value="0.03"/>-->
-    <param name="update_min_a" value="0.01"/>
+    <param name="update_min_a" value="0.1"/>
     <param name="odom_frame_id" value="odom"/>
     <param name="base_frame_id" value="base_link" />
     <param name="resample_interval" value="1"/>
-    <param name="transform_tolerance" value="0.2"/>
+    <param name="transform_tolerance" value="1.0"/>
     <param name="recovery_alpha_slow" value="0.001"/>
     <param name="recovery_alpha_fast" value="0.01"/>
     <param name="use_map_topic" value="false" />

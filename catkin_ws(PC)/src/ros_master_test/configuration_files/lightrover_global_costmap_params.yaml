@@ -35,7 +35,7 @@ global_costmap:
 
   # 更新频率
   update_frequency: 2.0
-  transform_tolerance: 0.5
+  transform_tolerance: 0.7
 
   # 插件列表
   plugins:

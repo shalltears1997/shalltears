@@ -2,14 +2,14 @@
 # 各パラメータについては http://wiki.ros.org/dwa_local_planner?distro=kinetic を参照してください。
 
 DWAPlannerROS:
-  acc_lim_x: 0.3
+  acc_lim_x: 0.1
   acc_lim_y: 0.0
-  acc_lim_th: 1.0
+  acc_lim_th: 0.3
  # acc_lim_th: 0.5
-  max_vel_trans: 0.10
-  min_vel_trans: -0.10
+  max_vel_trans: 0.1
+  min_vel_trans: -0.05
   max_vel_x: 0.1
-  min_vel_x: -0.1
+  min_vel_x: -0.05
   max_vel_y: 0.0
   min_vel_y: 0.0
   max_vel_theta: 0.5
@@ -28,7 +28,7 @@ DWAPlannerROS:
 # vx_samples: 3
   vx_samples: 3
   #vtheta_samples: 10
-  vtheta_samples: 20
+  vtheta_samples: 10
    
   path_distance_bias: 72.0
   goal_distance_bias: 28.0
@@ -43,5 +43,5 @@ DWAPlannerROS:
 
   publish_traj_pc: true
   publish_cost_grid_pc: true
-  global_frame_id: odom
+  global_frame_id: map
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 【修改】去抖 + 限频 + 保活 + latch；统一 frame_id="map"
+
 import socket
 import math
 import rospy
@@ -15,17 +17,17 @@ Y_OFFSET_MM   = float(rospy.get_param("~y_offset_mm", 1500.0))
 GOAL_EPS_M    = float(rospy.get_param("~goal_eps_xy", 0.20))     # 目标变化阈值(m)
 END_EPS_M     = float(rospy.get_param("~endpoint_eps", 0.20))    # 末端变化阈值(m)
 MIN_PERIOD_S  = float(rospy.get_param("~min_period", 0.5))       # 最小发布间隔(s)
-REPUB_PERIOD_S= float(rospy.get_param("~republish_period", 3.0)) # ★修改：保活重发(s)
+REPUB_PERIOD_S= float(rospy.get_param("~republish_period", 3.0)) # ★保活重发(s)
 SIG_ROUND     = int(rospy.get_param("~path_round", 2))
-LATCH_PATH    = bool(rospy.get_param("~path_latch", True))       # ★修改：路径采用latch
+LATCH_PATH    = bool(rospy.get_param("~path_latch", True))       # ★路径采用latch
 
 rospy.init_node("ethoengine_output_node", anonymous=False)
 
 goal_pub = rospy.Publisher("/move_base_simple/goal", PoseStamped, queue_size=1)
-path_pub = rospy.Publisher("/custom_global_path", Path, queue_size=1, latch=LATCH_PATH)  # ★修改：latch
+path_pub = rospy.Publisher("/custom_global_path", Path, queue_size=1, latch=LATCH_PATH)  # ★latch
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.settimeout(0.05)  # ★修改：短超时，避免阻塞
+sock.settimeout(0.05)  # ★短超时，避免阻塞
 rospy.loginfo("Connecting EthoEngine %s:%d", ENGINE_HOST, ENGINE_PORT)
 sock.connect((ENGINE_HOST, ENGINE_PORT))
 rospy.loginfo("Connected.")
@@ -107,11 +109,11 @@ try:
                 need_goal = True
             if (now - last_goal_time).to_sec() < MIN_PERIOD_S:
                 need_goal = False
-            if (now - last_goal_time).to_sec() >= REPUB_PERIOD_S:  # ★修改：保活重发
+            if (now - last_goal_time).to_sec() >= REPUB_PERIOD_S:  # ★保活重发
                 need_goal = True
 
             if need_goal:
-                pose_msg.header.stamp = now
+                pose_msg.header.stamp = now   # （留 now 即可，Planner/TF 已做 zero-time 处理）
                 pose_msg.pose.position = Point(gx, gy, 0.0)
                 goal_pub.publish(pose_msg)
                 last_goal_xy = (gx, gy)
@@ -141,13 +143,13 @@ try:
                 need_path = True
             if (now - last_path_time).to_sec() < MIN_PERIOD_S:
                 need_path = False
-            if (now - last_path_time).to_sec() >= REPUB_PERIOD_S:  # ★修改：保活重发
+            if (now - last_path_time).to_sec() >= REPUB_PERIOD_S:  # ★保活重发
                 need_path = True
 
             if need_path:
                 path_msg = Path()
-                path_msg.header.stamp = now
-                path_msg.header.frame_id = "map"
+                path_msg.header.stamp = now      # Planner 中会统一改成 stamp=0
+                path_msg.header.frame_id = "map" # 统一坐标系
                 for (px, py) in pts:
                     ps = PoseStamped()
                     ps.header = path_msg.header

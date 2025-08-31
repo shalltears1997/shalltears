@@ -1,0 +1,7 @@
+<launch>
+
+  <node pkg="lightrover_ros" type="i2c_controller.py" name="rover_i2c_controller" />
+  <node pkg="lightrover_ros" type="odometry.py" name="rover_odometry" /> 
+  <node pkg="lightrover_ros" type="pos_controller.py" name="pos_controller" />
+  
+</launch>

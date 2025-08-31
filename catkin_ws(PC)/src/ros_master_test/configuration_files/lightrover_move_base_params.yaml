@@ -7,7 +7,7 @@ base_global_planner: "custom_global_planner/CustomPathPlanner"
 base_local_planner: "dwa_local_planner/DWAPlannerROS"
 
 # 指令値の出力周波数（制御周期）
-controller_frequency: 12
+controller_frequency: 6
 
 shutdown_costmaps: true
 
